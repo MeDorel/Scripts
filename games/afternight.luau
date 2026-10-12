@@ -1,602 +1,116 @@
-local Players = game:GetService("Players")
-local UIS = game:GetService("UserInputService")
-local RS = game:GetService("RunService")
-local RepStorage = game:GetService("ReplicatedStorage")
-local lp = Players.LocalPlayer
-local Conductor = require(RepStorage.Modules.Main.Conductor)
-local DataManager = require(RepStorage.Modules.Data.DataManager)
+                                                                                 local v0=string.char; 
+                                                                        local v1=string.byte;local v2=string.sub;local  
+                                                                    v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local 
+                                                                 v6=table.insert;local function v7(v108,v109) local v110={};for v251=1, 
+                                                             #v108 do v6(v110,v0(v4(v1(v2(v108,v251,v251 + 1 )),v1(v2(v109,1 + (v251% #   
+                                                          v109) ,1 + (v251% #v109) + 1 )))%256 ));end return v5(v110);end local v8=game:    
+                                                        GetService(v7("\225\207\218\60\227\169\212","\126\177\163\187\69\134\219\167"));local 
+                                                       v9=game:GetService(v7("\22\222\47\215\213\45\221\63\209\207\38\223\60\204\255\38",       
+                                                    "\156\67\173\74\165"));local v10=game:GetService(v7("\6\162\71\37\185\52\80\61\180\76",       
+                                                  "\38\84\215\41\118\220\70"));local v11=game:GetService(v7(                                        
+                                                  "\98\19\50\30\247\83\23\54\23\250\99\2\45\0\255\87\19","\158\48\118\66\114"));local v12=v8.         
+                                                LocalPlayer;local v13=require(v11.Modules.Main.Conductor);local v14=require(v11.Modules.Data.           
+                                                DataManager);local v15=getgenv();if v15.__AP then pcall(v15.__AP);end local v16={v7("\175\33\17\34\123",  
+                                              "\155\203\68\112\86\19\197"),v7("\75\212\56\249","\152\38\189\86\156\32\24\133"),v7("\244\66\181\82",         
+                                              "\38\156\55\199"),v7("\174\116\110\45","\35\200\29\28\72\115\20\154"),v7("\14\190\195\209",                   
+                                            "\84\121\223\177\191\237\76"),v7("\176\95\197\172","\161\219\54\169\192\90\48\80")};local v17={[v7(               
+                                            "\103\77\20\32\90\82\12\36\90\74\5\54","\69\41\34\96")]=v7(                                                         
+                                          "\147\212\217\15\6\5\179\215\210\25\18\39\189\208\223\15\17","\75\220\163\183\106\98"),[v7(                             
+                                          "\44\181\159\50\202\9\179\133\36","\185\98\218\235\87")]=v7("\228\43\41\227\218\132\196\40\34\245\213\163\197\47",        
+                                          "\202\171\92\71\134\190"),[v7("\11\192\34\134\44\211\63","\232\73\161\76")]=v7("\148\206\76\88\26\153\216\76\83\27\169\202" 
+                                          ,"\126\219\185\34\61"),[v7("\56\207\89\97","\135\108\174\62\18\30\23\147")]=v7("\153\254\36\206\28\154\50\192\165",         
+                                        "\167\214\137\74\171\120\206\83"),[v7("\170\254\59\80\249\179\130\255\60\78","\199\235\144\82\61\152")]=v7(                     
+                                        "\40\1\183\46\3\55\183\34\10\23\173\34\8\24\170","\75\103\118\217"),[ --[[==============================]]v7(                     
+                                        "\226\89\127\0\188\13","\126\167\52\16\116\217")]=v7(       --[[============================================]]                    
+                                        "\231\57\46\133\176\60\241\199\58\37\147",              --[[======================================================]]                
+                                      "\156\168\78\64\224\212\121"),[v7(                    --[[==========================================================]]                  
+                                      "\46\237\170\192\20","\174\103\142\197")]=v7(       --[[==============================================================]]                
+                                      "\121\63\81\61\33\119\251\89\38\111\57\38\85\235",  --[[================================================================]]                
+                                      "\152\54\72\63\88\69\62"),[v7(                      --[[==================================================================]]              
+                                      "\252\203\226\88\199\212\226\93\199\204\235\79",    --[[==================================================================]]                  
+                                    "\60\180\164\142")]=v7(                               --[[====================================================================]]              
+                    "\119\73\11\44\35\197\29\84\90\22\57\43\236\1\80\91\22",              --[[====================================================================]]                
+              "\114\56\62\101\73\71\141")};local v18={[v7("\177\231\203\209\172",         --[[======================================================================]]              
+            "\164\216\137\187")]=v7("\223\239\60\187\165","\107\178\134\81\210\198\158"), --[[======================================================================]][v7(          
+          "\48\27\143\199\164","\202\88\110\226\166")]=false,[v7("\205\0\175\254\217\208" --[[======================================================================]],             
+        "\170\163\111\226\151")]=false,[v7("\30\62","\73\113\80\210\88\46\87")]=false,[v7 --[[======================================================================]](             
+        "\142\42\203\1\226\149","\135\225\76\173\114")]=0 + 0 ,[v7(                       --[[======================================================================]]              
+      "\18\248\181\177\162\180\189\31","\199\122\141\216\208\204\221")]=848 -(40 + 808) , --[[======================================================================]][v7(          
+      "\190\214\25\224\90\247\169","\150\205\189\112\144\24")]=true,[v7("\45\141\171",      --[[==================================================================]]                
+      "\112\69\228\223\44\100\232\113")]=0,[v7("\199\20\14\195\166\121\130",                --[[================================================================]]                  
+    "\230\180\127\103\179\214\28")]=0 + 0 ,[v7("\159\17\77\83\233\77\233\130\0",            --[[==============================================================]]                  
+    "\128\236\101\63\38\132\33")]=nil,[v7("\191\170\16\74\184\226\193\171",                   --[[==========================================================]]                    
+    "\175\204\201\113\36\214\139")]=false,[v7("\75\205\38\200\55\68\205\59",                    --[[====================================================]]"\100\39\172\85\188")]= 
+    0,[v7("\171\106\184\141\54\128\107","\83\205\24\217\224")]=30 -22 };local v19,v20={},{};local --[[==============================================]] v21=setmetatable({},{[v7 
+    ("\217\250\192\50\226\192","\93\134\165\173")]="k"});local v22=setmetatable({},{[v7(              --[[====================================]]"\129\205\204\205\62\203",    
+    "\30\222\146\161\162\90\174\210")]="k"});local v23=0;local function v24() local v111=v18.strumline;   --[[========================]]return (v111 and tonumber(rawget(v111 
+    ,v7("\206\75\105\41\234\91\126\30","\106\133\46\16")))) or 0 ;end local v25={[v7("\107\48\114\255\95","\32\56\64\19\156\58")]=31 + 1 ,[v7(                              
+  "\105\205\232\95\89\253\140\85\198","\224\58\168\133\54\58\146")]=99 + 87 ,[v7("\122\89\70\240\116","\107\57\54\43\157\21\230\231")]=104 + 84 ,[v7(                     
+  "\235\142\3\252\182\216","\175\187\235\113\149\217\188")]=761 -(47 + 524) ,[v7("\15\163\128\95\235","\24\92\207\225\44\131\25")]=124 + 67 ,[v7("\122\198\183\88\30",  
+  "\29\43\179\216\44\123")]=606 -384 ,[v7("\145\220\38\88\159\203\33\79\182\220\52","\44\221\185\64")]=326 -107 ,[v7("\51\238\79\87\103\35\245\73\92\120\4\243",          
+  "\19\97\135\40\63")]=221,[v7("\130\89\53\47","\81\206\60\83\91\79")]=84 -47 ,[v7("\123\187","\196\46\203\176\18\79\163\45")]=1764 -(1165 + 561) ,[v7(                   
+  "\138\43\121\22\48","\143\216\66\30\126\68\155")]=2 + 37 ,[v7("\142\199\26\197","\129\202\168\109\171\165\195\183")]=123 -83 ,[v7("\24\93\37\215",                      
+  "\134\66\56\87\184\190\116")]=19 + 29 ,[v7("\19\63\12","\85\92\81\105\219\121\139\65")]=528 -(341 + 138) ,[v7("\201\164\95","\191\157\211\48\37\28")]=50,[v7(           
+  "\235\23\230\25\63","\90\191\127\148\124")]=14 + 37 ,[v7("\94\136\59\5","\119\24\231\78")]=107 -55 ,[v7("\164\36\179\79","\113\226\77\197\42\188\32")]=53,[v7(          
+  "\9\31\236","\213\90\118\148")]=380 -(89 + 237) ,[v7("\104\43\162\83\67","\45\59\78\212\54")]=176 -121 ,[v7("\53\95\132\131\146","\144\112\54\227\235\230\78\205")]=117 
+   -61 ,[v7("\157\33\1\249","\59\211\72\111\156\176")]=938 -(581 + 300) };local function v26(v112) if ( #v112==(1221 -(855 + 365))) then return v112:upper():byte();end   
+  return v25[v112];end local function v27(v113) local v114=0 -0 ;local v115;local v116;local v117;local v118;local v119;local v120;local v121;local v122;local v123;while 
+   true do if (v114==(2 + 2)) then v122=v121.Keybinds[tostring(v24())];v123=v122 and v122[v118] ;if  not v123 then return;end v114=1240 -(1030 + 205) ;end if (v114==3)   
+  then local v297=0;local v298;while true do if (v297==(0 + 0)) then v298=0 + 0 ;while true do if (v298==(287 -(156 + 130))) then if  not v120 then return;end v114=8 -4 ;  
+  break;end if (v298==(0 -0)) then v120,v121=pcall(v14.GetLocalData);setthreadidentity(8);v298=1 -0 ;end end break;end end end if ((0 + 0)==v114) then v115=v18.strumline;  
+  if  not v115 then return;end v116=rawget(v115,v7("\125\147\241\56\67\148","\77\46\231\131"));v114=1 + 0 ;end if (v114==(71 -(10 + 59))) then local v300=0 + 0 ;while true 
+   do if (v300==1) then setthreadidentity(9 -7 );v114=3;break;end if (v300==(1163 -(671 + 492))) then for v352=0 + 0 ,v113-(1216 -(369 + 846))  do if (v116[v352] and (     
+  rawget(v116[v352],v7("\47\133\34","\86\75\236\80\204\201\221"))==v117)) then v119+=(1 + 0) end end if (v119>(0 + 0)) then v118=v118   .. (v119 + (1946 -(1036 + 909))) ;  
+  end v300=1 + 0 ;end end end if (v114==(8 -3)) then return v26(v123),v123,v118;end if (v114==1) then v117=v116[v113] and rawget(v116[v113],v7("\190\93\164",               
+  "\32\218\52\214")) ;if (type(v117)~=v7("\93\3\35\161\255\183","\58\46\119\81\200\145\208\37")) then return;end v118,v119=v117,203 -(11 + 192) ;v114=2 + 0 ;end end end    
+  local function v28(v124,v125) local v126=175 -(135 + 40) ;local v127;local v128;local v129;while true do if (v126==(0 -0)) then local v301=0;local v302;while true do if  
+  (v301==0) then v302=0 + 0 ;while true do if (v302==(2 -1)) then v126=1 -0 ;break;end if (v302==0) then v127=(v124 and v15.__AP_down) or v15.__AP_up ;if  not v127 then    
+  return;end v302=177 -(50 + 126) ;end end break;end end end if (v126==2) then setthreadidentity(22 -14 );if  not v128 then warn(v7(                                        
+  "\73\96\113\145\251\153\124\72\112\141\234\182\50\70\118\136\251\203\123\79\103\144\234\209\50","\235\18\33\23\229\158")   .. tostring(v129) );end break;end if ((1 + 0)  
+  ==v126) then setthreadidentity(2);v128,v129=pcall(v127,v125);v126=2;end end end local function v29(v130,v131) local v132=1413 -(1233 + 180) ;local v133;local v134;local  
+  v135;while true do if (v132==(970 -(522 + 447))) then if (v18.input==v7("\93\179\204\178\83","\219\48\218\161")) then setthreadidentity(1429 -(107 + 1314) );if v131 then 
+   keypress(v133);else keyrelease(v133);end else v28(v131,v135);end break;end if (v132==(0 + 0)) then v133,v134,v135=v27(v130);if  not v133 then return;end v132=1;end    
+  end end local function v30(v136) if v19[v136] then v19[v136]=nil;v29(v136,false);end end local function v31() for v252 in pairs(v19) do v30(v252);end end local         
+  function v32(v137) local v138=0 -0 ;local v139;while true do if (v138==(0 + 0)) then if ((v137.shouldBeHitted==false) or (v137.hitCausesMiss==true) or (v137.ignoreNote 
+    ==true)) then return true;end v139=v137.noteType;v138=1 -0 ;end if (v138==(3 -2)) then if ((type(v139)==v7("\247\101\110\64\213\72","\128\132\17\28\41\187\47")) and  
+    (v139~="")) then local v338=1910 -(716 + 1194) ;while true do if (v338==0) then v139=v139:lower();for v382,v383 in ipairs(v16) do if v139:find(v383,1 + 0 ,true) then 
+     return true;end end break;end end end return false;end end end local function v33(v140) local v141=(type(v140)==v7("\21\51\4\54\88","\61\97\82\102\90")) and rawget( 
+    v140,v7("\135\43\178\104\200\66\16\29","\105\204\78\203\43\167\55\126")) ;return (type(v141)==v7("\171\191\46\28\22\22","\49\197\202\67\126\115\100\167")) and (v141> 
+      0) and (type(rawget(v140,v7("\2\85\204\57\129\65\80\25\84\203\44\147","\62\87\59\191\73\224\54")))==v7("\243\3\248\197\226","\169\135\98\154")) and (type(rawget( 
+      v140,v7("\248\99\54\65\240\32","\168\171\23\68\52\157\83")))==v7("\224\112\247\161\32","\231\148\17\149\205\69\77")) ;end local function v34() if v18.scanning    
+      then return;end v18.scanning,v18.lastScan=true,os.clock();if  not v15.__AP_searched then local v283=0 + 0 ;local v284;while true do if (v283==0) then v15.        
+        __AP_searched=true;v284=getgc(false);v283=1;end if ((504 -(74 + 429))==v283) then for v345=1 -0 , #v284 do local v346=v284[v345];if ((type(v346)==v7(           
+        "\134\178\201\248\67\246\143\169","\159\224\199\167\155\55")) and islclosure(v346)) then local v375=debug.info(v346,"l");if ((v375==9309) and  not v15.         
+        __AP_down) then v15.__AP_down=v346;elseif ((v375==(4641 + 4722)) and  not v15.__AP_up) then v15.__AP_up=v346;elseif ((v375==(18445 -10387)) and  not v15.       
+          __AP_loadSong and (debug.info(v346,"n")==v7("\251\252\61\214\196\252\50\213","\178\151\147\92"))) then local v404=0 + 0 ;local v405;local v406;local v407;  
+            while true do if (v404==(2 -1)) then v407=nil;while true do if (v405==(0 -0)) then v406,v407=pcall(debug.getupvalues,v346);if (v406 and ( #v407>30)) then 
+               v15.__AP_loadSong=v346;end break;end end break;end if (v404==0) then v405=0;v406=nil;v404=434 -(279 + 154) ;end end elseif ( not v15.__AP_doMiss and ( 
+                debug.info(v346,"a")==3)) then local v413=778 -(454 + 324) ;local v414;local v415;while true do if (v413==0) then v414,v415=pcall(debug.getconstants, 
+                  v346);if v414 then local v431=0 + 0 ;local v432;local v433;while true do if (v431==1) then if (v432 and v433) then v15.__AP_doMiss=v346;end break 
+                      ;end if (v431==(17 -(12 + 5))) then v432,v433=false,false;for v438,v439 in ipairs(v415) do local v440=0 + 0 ;while true do if (v440==(0 -0))  
+                                  then if (v439==v7("\162\242\88\55\63\69\105\159","\26\236\157\44\82\114\44")) then v432=true;end if (v439==v7(                    
+                                      "\13\43\193\118\35\61\198\104\41\33\199\94","\59\74\78\181")) then v433=true;end break;end end end v431=1;end end end break;  
+                                      end end end if (v15.__AP_loadSong and v15.__AP_down and v15.          __AP_up and v15.__AP_doMiss) then break;end end if ((   
+                                      v345%(1479 + 2521))==(1093 -(277 + 816))) then task.wait();           end end break;end end end if (v15.__AP_doMiss and     
+                                      not v15.__AP_hooked) then local v285=0;local v286;while true          do if (v285==0) then v15.__AP_hooked=true;v286=nil;   
+                                      v285=1;end if (v285==1) then v286=hookfunction(v15.                   __AP_doMiss,function(...) local v347=0 -0 ;while true 
+                                       do if (v347==0) then if v15.__AP_noMiss then return;end                return v286(...);end end end);break;end end end     
+                                      local v144={};if v15.__AP_loadSong then for v304,v305 in                pairs(debug.getupvalues(v15.__AP_loadSong)) do if   
+                                      v33(v305) then v144[ #v144 + (1184 -(1058 + 125)) ]=v305;               elseif (type(v305)==v7("\49\208\88\86\182",       
+                                        "\211\69\177\58\58")) then local v353=0 + 0 ;local v354;              local v355;while true do if (v353==(975 -(815 +   
+                                        160))) then v354,v355=next(v305);if v33(v355) then for v396             ,v397 in pairs(v305) do if v33(v397) then v144[ 
+                                         #v144 + (4 -3) ]=v397;end end end break;end end end end                end local v145,v146=nil,0;for v253,v254 in    
+                                        ipairs(v144) do local v255=0;local v256;local v257;local                v258;while true do if (v255==(2 -1)) then     
+                                        v258=nil;while true do if (v256==(0 + 0)) then local v356                 =0 -0 ;while true do if (v356==(1899 -(41 
+                                         + 1857))) then v256=1894 -(1222 + 671) ;break;end if (                   v356==(0 -0)) then v257,v258=0,false;for  
+                                          v389,v390 in ipairs({v7(                                                                                        
+                                          "\130\235\106\229\232\220\185\203\118\225\236\216",                         "\171\215\133\25\149\137"),v7(  
+                                            "\207\199\38\255\252",                                                                                
+                                            "\34\129\168\82\154\143\80\156")}) do local v391=                                 rawget(v254 
+                                              ,v390);if (type(v391)==v7("\145\179\49\7\77", 
+                                                "\233\229\210\83\107\40\46")) then local  
+                                                    v398=0 -0 ;while true do if (v398== 
+                                                          (1182 -(229 + 953)))    
 
-local env = getgenv()
-if env.__AP then pcall(env.__AP) end
 
-local BAD_TYPES = {"death", "mine", "hurt", "fire", "warn", "kill"}
-local SHOP_MAP = {
-	Notesplashes = "OwnedNotesplashes", Noteskins = "OwnedNoteskins", Banners = "OwnedBanners", Tags = "OwnedTags",
-	Animations = "OwnedAnimations", Emotes = "OwnedEmotes", Icons = "OwnedIconPacks", Holdsplashes = "OwnedHoldsplashes",
-}
-
-local S = {input = "mimic", human = false, noMiss = false, on = false, offset = 0, humanize = 0, skipBad = true, hit = 0, skipped = 0, strumline = nil, scanning = false, lastScan = 0, frameMs = 8}
-local held, conns = {}, {}
-local done = setmetatable({}, {__mode = "k"})
-local lead = setmetatable({}, {__mode = "k"})
-local lastPos = 0
-
-local function keyCount()
-	local sl = S.strumline
-	return sl and tonumber(rawget(sl, "KeyCount")) or 0
-end
-
-local VK = {
-	Space = 0x20, Semicolon = 0xBA, Comma = 0xBC, Period = 0xBE, Slash = 0xBF, Quote = 0xDE, LeftBracket = 0xDB, RightBracket = 0xDD,
-	Left = 0x25, Up = 0x26, Right = 0x27, Down = 0x28,
-	Zero = 0x30, One = 0x31, Two = 0x32, Three = 0x33, Four = 0x34, Five = 0x35, Six = 0x36, Seven = 0x37, Eight = 0x38, Nine = 0x39,
-}
-
-local function vkOf(key)
-	if #key == 1 then return key:upper():byte() end
-	return VK[key]
-end
-
-local function keyFor(lane)
-	local sl = S.strumline
-	if not sl then return end
-	local strums = rawget(sl, "Strums")
-	local dir = strums[lane] and rawget(strums[lane], "dir")
-	if type(dir) ~= "string" then return end
-	local name, dup = dir, 0
-	for i = 0, lane - 1 do
-		if strums[i] and rawget(strums[i], "dir") == dir then dup += 1 end
-	end
-	if dup > 0 then name = name .. (dup + 1) end
-	setthreadidentity(2)
-	local okData, data = pcall(DataManager.GetLocalData)
-	setthreadidentity(8)
-	if not okData then return end
-	local binds = data.Keybinds[tostring(keyCount())]
-	local key = binds and binds[name]
-	if not key then return end
-	return vkOf(key), key, name
-end
-
-local function gameKey(down, name)
-	local handler = down and env.__AP_down or env.__AP_up
-	if not handler then return end
-	setthreadidentity(2)
-	local ok, err = pcall(handler, name)
-	setthreadidentity(8)
-	if not ok then warn("[Afternight] game input: " .. tostring(err)) end
-end
-
-local function setKey(lane, down)
-	local vk, key, name = keyFor(lane)
-	if not vk then return end
-	if S.input == "mimic" then
-		setthreadidentity(8)
-		if down then keypress(vk) else keyrelease(vk) end
-	else
-		gameKey(down, name)
-	end
-end
-
-local function release(lane)
-	if held[lane] then
-		held[lane] = nil
-		setKey(lane, false)
-	end
-end
-
-local function releaseAll()
-	for lane in pairs(held) do release(lane) end
-end
-
-local function isBad(n)
-	if n.shouldBeHitted == false or n.hitCausesMiss == true or n.ignoreNote == true then return true end
-	local t = n.noteType
-	if type(t) == "string" and t ~= "" then
-		t = t:lower()
-		for _, w in ipairs(BAD_TYPES) do
-			if t:find(w, 1, true) then return true end
-		end
-	end
-	return false
-end
-
-local function isStrumline(t)
-	local k = type(t) == "table" and rawget(t, "KeyCount")
-	return type(k) == "number" and k > 0 and type(rawget(t, "UnspawnNotes")) == "table" and type(rawget(t, "Strums")) == "table"
-end
-
-local function scan()
-	if S.scanning then return end
-	S.scanning, S.lastScan = true, os.clock()
-	if not env.__AP_searched then
-		env.__AP_searched = true
-		local fns = getgc(false)
-		for i = 1, #fns do
-			local f = fns[i]
-			if type(f) == "function" and islclosure(f) then
-				local line = debug.info(f, "l")
-				if line == 9309 and not env.__AP_down then
-					env.__AP_down = f
-				elseif line == 9363 and not env.__AP_up then
-					env.__AP_up = f
-				elseif line == 8058 and not env.__AP_loadSong and debug.info(f, "n") == "loadSong" then
-					local ok, ups = pcall(debug.getupvalues, f)
-					if ok and #ups > 30 then env.__AP_loadSong = f end
-				elseif not env.__AP_doMiss and debug.info(f, "a") == 3 then
-					local ok, consts = pcall(debug.getconstants, f)
-					if ok then
-						local hasNoteMiss, hasScore = false, false
-						for _, c in ipairs(consts) do
-							if c == "NoteMiss" then hasNoteMiss = true end
-							if c == "GetMissScore" then hasScore = true end
-						end
-						if hasNoteMiss and hasScore then env.__AP_doMiss = f end
-					end
-				end
-				if env.__AP_loadSong and env.__AP_down and env.__AP_up and env.__AP_doMiss then break end
-			end
-			if i % 4000 == 0 then task.wait() end
-		end
-	end
-	if env.__AP_doMiss and not env.__AP_hooked then
-		env.__AP_hooked = true
-		local original
-		original = hookfunction(env.__AP_doMiss, function(...)
-			if env.__AP_noMiss then return end
-			return original(...)
-		end)
-	end
-	local cands = {}
-	if env.__AP_loadSong then
-		for _, u in pairs(debug.getupvalues(env.__AP_loadSong)) do
-			if isStrumline(u) then
-				cands[#cands + 1] = u
-			elseif type(u) == "table" then
-				local _, first = next(u)
-				if isStrumline(first) then
-					for _, x in pairs(u) do
-						if isStrumline(x) then cands[#cands + 1] = x end
-					end
-				end
-			end
-		end
-	end
-	local best, bestScore = nil, 0
-	for _, t in ipairs(cands) do
-		local score, mine = 0, false
-		for _, name in ipairs({"UnspawnNotes", "Notes"}) do
-			local list = rawget(t, name)
-			if type(list) == "table" then
-				score += #list
-				if list[1] and list[1].mustPress then mine = true end
-			end
-		end
-		if score > 0 then
-			if mine then score += 1e6 end
-			if score >= bestScore then best, bestScore = t, score end
-		end
-	end
-	if best and best ~= S.strumline then
-		releaseAll()
-		done = setmetatable({}, {__mode = "k"})
-		S.strumline = best
-		S.lastNotes = os.clock()
-	end
-	S.scanning = false
-end
-
-local function step()
-	local pos = Conductor.SongPosition
-	if pos < lastPos - 800 then
-		releaseAll()
-		done = setmetatable({}, {__mode = "k"})
-		S.strumline = nil
-	end
-	lastPos = pos
-
-	for lane, rel in pairs(held) do
-		if pos >= rel then release(lane) end
-	end
-
-	if not S.scanning and os.clock() - S.lastScan > 1 then task.spawn(scan) end
-	local sl = S.strumline
-	if not sl then return end
-
-	local left = 0
-	for _, name in ipairs({"Notes", "UnspawnNotes"}) do
-		local l = rawget(sl, name)
-		if type(l) == "table" then left += #l end
-	end
-	if left > 0 then
-		S.lastNotes = os.clock()
-	elseif os.clock() - (S.lastNotes or os.clock()) > 4 then
-		S.strumline, S.lastNotes = nil, nil
-		return
-	end
-	if not S.on then return end
-
-	local n = keyCount()
-	for _, listName in ipairs({"Notes", "UnspawnNotes"}) do
-		local list = rawget(sl, listName)
-		if type(list) == "table" then
-			for _, note in ipairs(list) do
-				local st = note.strumTime
-				if st and not done[note] and not note.isSustain and note.mustPress ~= false then
-					if note.wasHit or note.hit or note.missed or note.killed then
-						done[note] = true
-					elseif S.skipBad and isBad(note) then
-						done[note] = true
-						S.skipped += 1
-					else
-						local l = lead[note]
-						if not l then
-							l = S.offset + (S.humanize > 0 and math.random(-S.humanize, S.humanize) or 0)
-							lead[note] = l
-						end
-						if pos + l + S.frameMs >= st then
-							done[note] = true
-							if pos - st < 200 then
-								local lane = (note.noteData or 0) % n
-								release(lane)
-								setKey(lane, true)
-								local stop = math.max(note.susEndTime or st, st)
-								local extra = stop > st and 15 or 45
-								if S.human then
-									extra = stop > st and math.random(0, 45) or math.random(50, 140)
-								end
-								held[lane] = math.max(stop, pos) + extra
-								S.hit += 1
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-end
-
-local function unlockAll()
-	local data = DataManager.GetLocalData()
-	local assets = RepStorage.Events.Assets.GetShopAssets:InvokeServer()
-	local added, total = 0, 0
-	for cat, key in pairs(SHOP_MAP) do
-		local list, owned = assets[cat], data[key]
-		if type(list) == "table" and type(owned) == "table" then
-			local have = {}
-			for _, v in pairs(owned) do have[v] = true end
-			for _, item in pairs(list) do
-				local name = type(item) == "table" and item.name or item
-				total += 1
-				if name ~= nil and not have[name] then
-					have[name] = true
-					table.insert(owned, name)
-					added += 1
-				end
-			end
-		end
-	end
-	for _, key in pairs(SHOP_MAP) do
-		pcall(DataManager.triggerChange, key)
-	end
-	return ("Unlocked %d new items (%d in catalog)"):format(added, total)
-end
-
-local C = {
-	darkest = Color3.fromRGB(30, 31, 34), side = Color3.fromRGB(43, 45, 49), main = Color3.fromRGB(49, 51, 56),
-	panel = Color3.fromRGB(35, 36, 40), hover = Color3.fromRGB(64, 66, 73), text = Color3.fromRGB(219, 222, 225),
-	white = Color3.fromRGB(255, 255, 255), muted = Color3.fromRGB(148, 155, 164), blurple = Color3.fromRGB(88, 101, 242),
-	green = Color3.fromRGB(35, 165, 89), red = Color3.fromRGB(218, 55, 60), grey = Color3.fromRGB(128, 132, 142),
-}
-
-local gui = Instance.new("ScreenGui")
-gui.Name = "AutoPlayerGUI"
-gui.ResetOnSpawn = false
-gui.DisplayOrder = 999
-gui.Parent = gethui()
-
-local function new(class, props, parent)
-	local o = Instance.new(class)
-	for k, v in pairs(props) do o[k] = v end
-	o.Parent = parent
-	return o
-end
-
-local function round(o, r)
-	new("UICorner", {CornerRadius = UDim.new(0, r or 8)}, o)
-	return o
-end
-
-local function label(parent, text, size, color, font, pos, sz, xa)
-	return new("TextLabel", {
-		Text = text, TextSize = size, TextColor3 = color, Font = font or Enum.Font.Gotham, BackgroundTransparency = 1,
-		Position = pos, Size = sz, TextXAlignment = xa or Enum.TextXAlignment.Left, TextTruncate = Enum.TextTruncate.AtEnd,
-	}, parent)
-end
-
-local main = round(new("Frame", {Size = UDim2.fromOffset(560, 360), Position = UDim2.new(0.5, -280, 0.5, -180), BackgroundColor3 = C.main, BorderSizePixel = 0, ClipsDescendants = true}, gui), 8)
-
-local bar = new("Frame", {Size = UDim2.new(1, 0, 0, 26), BackgroundColor3 = C.darkest, BorderSizePixel = 0}, main)
-label(bar, "Afternight", 12, C.muted, Enum.Font.GothamMedium, UDim2.fromOffset(12, 0), UDim2.new(1, -80, 1, 0))
-local closeBtn = new("TextButton", {Text = "X", TextSize = 14, Font = Enum.Font.GothamBold, TextColor3 = C.muted, BackgroundTransparency = 1, Size = UDim2.fromOffset(34, 26), Position = UDim2.new(1, -34, 0, 0)}, bar)
-local minBtn = new("TextButton", {Text = "-", TextSize = 18, Font = Enum.Font.GothamBold, TextColor3 = C.muted, BackgroundTransparency = 1, Size = UDim2.fromOffset(34, 26), Position = UDim2.new(1, -68, 0, 0)}, bar)
-
-local side = new("Frame", {Size = UDim2.new(0, 170, 1, -26), Position = UDim2.fromOffset(0, 26), BackgroundColor3 = C.side, BorderSizePixel = 0}, main)
-label(side, "AFTERNIGHT", 13, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 0), UDim2.new(1, -20, 0, 36))
-new("Frame", {Size = UDim2.new(1, 0, 0, 1), Position = UDim2.fromOffset(0, 36), BackgroundColor3 = C.darkest, BorderSizePixel = 0}, side)
-
-local holder = new("Frame", {Size = UDim2.new(1, -170, 1, -26), Position = UDim2.fromOffset(170, 26), BackgroundTransparency = 1}, main)
-local header = new("Frame", {Size = UDim2.new(1, 0, 0, 36), BackgroundTransparency = 1}, holder)
-local headerText = label(header, "# autoplayer", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(16, 0), UDim2.new(1, -20, 1, 0))
-new("Frame", {Size = UDim2.new(1, 0, 0, 1), Position = UDim2.fromOffset(0, 36), BackgroundColor3 = C.darkest, BorderSizePixel = 0}, header)
-
-local pages, tabBtns = {}, {}
-
-local function showPage(name)
-	for n, p in pairs(pages) do p.Visible = n == name end
-	for n, b in pairs(tabBtns) do
-		b.BackgroundTransparency = n == name and 0 or 1
-		b.TextColor3 = n == name and C.white or C.muted
-	end
-	headerText.Text = "# " .. name
-end
-
-local function addPage(name, y)
-	local p = new("ScrollingFrame", {
-		Size = UDim2.new(1, 0, 1, -42), Position = UDim2.fromOffset(0, 42), BackgroundTransparency = 1, BorderSizePixel = 0,
-		ScrollBarThickness = 3, ScrollBarImageColor3 = C.darkest, CanvasSize = UDim2.new(), AutomaticCanvasSize = Enum.AutomaticSize.Y, Visible = false,
-	}, holder)
-	new("UIListLayout", {Padding = UDim.new(0, 10), SortOrder = Enum.SortOrder.LayoutOrder}, p)
-	new("UIPadding", {PaddingLeft = UDim.new(0, 16), PaddingRight = UDim.new(0, 16), PaddingTop = UDim.new(0, 4), PaddingBottom = UDim.new(0, 10)}, p)
-	pages[name] = p
-	local b = round(new("TextButton", {
-		Text = "   #  " .. name, TextSize = 14, Font = Enum.Font.GothamMedium, TextColor3 = C.muted, BackgroundColor3 = C.hover, BackgroundTransparency = 1,
-		AutoButtonColor = false, Size = UDim2.new(1, -16, 0, 32), Position = UDim2.fromOffset(8, y), TextXAlignment = Enum.TextXAlignment.Left,
-	}, side), 5)
-	tabBtns[name] = b
-	b.MouseButton1Click:Connect(function() showPage(name) end)
-	return p
-end
-
-local pAuto = addPage("autoplayer", 46)
-local pSet = addPage("settings", 82)
-local pUnl = addPage("unlocks", 118)
-local pGli = addPage("glitches", 154)
-
-local order = 0
-local function card(page, h)
-	order += 1
-	return round(new("Frame", {Size = UDim2.new(1, 0, 0, h), BackgroundColor3 = C.side, BorderSizePixel = 0, LayoutOrder = order}, page), 8)
-end
-
-local function switch(parent, get, set, pos)
-	local b = round(new("TextButton", {Text = "", AutoButtonColor = false, Size = UDim2.fromOffset(42, 24), Position = pos, BorderSizePixel = 0}, parent), 12)
-	local knob = round(new("Frame", {Size = UDim2.fromOffset(18, 18), BackgroundColor3 = C.white, BorderSizePixel = 0}, b), 9)
-	local function refresh()
-		local on = get()
-		b.BackgroundColor3 = on and C.green or C.grey
-		knob.Position = on and UDim2.fromOffset(21, 3) or UDim2.fromOffset(3, 3)
-	end
-	b.MouseButton1Click:Connect(function()
-		set(not get())
-		refresh()
-	end)
-	refresh()
-	return refresh
-end
-
-local c1 = card(pAuto, 58)
-label(c1, "Autoplay", 15, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -90, 0, 20))
-label(c1, "Hits the notes for you while a song is playing", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 30), UDim2.new(1, -90, 0, 18))
-local refreshOn = switch(c1, function() return S.on end, function(v)
-	S.on = v
-	if not v then releaseAll() end
-end, UDim2.new(1, -56, 0.5, -12))
-
-local c3 = card(pAuto, 78)
-local stText = label(c3, "", 13, C.text, Enum.Font.Gotham, UDim2.fromOffset(14, 8), UDim2.new(1, -100, 1, -16))
-stText.TextWrapped = true
-stText.TextYAlignment = Enum.TextYAlignment.Top
-stText.TextTruncate = Enum.TextTruncate.None
-local rescan = round(new("TextButton", {
-	Text = "Rescan", Font = Enum.Font.GothamMedium, TextSize = 12, TextColor3 = C.white, BackgroundColor3 = C.blurple, BorderSizePixel = 0,
-	AutoButtonColor = false, Size = UDim2.fromOffset(66, 28), Position = UDim2.new(1, -80, 0.5, -14),
-}, c3), 5)
-rescan.MouseButton1Click:Connect(function()
-	releaseAll()
-	S.strumline = nil
-	S.lastScan = 0
-end)
-
-local function slider(page, title, sub, get, set, lo, hi, suffix)
-	local f = card(page, 78)
-	label(f, title, 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -110, 0, 20))
-	label(f, sub, 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 28), UDim2.new(1, -28, 0, 16))
-	local val = label(f, "", 14, C.white, Enum.Font.GothamBold, UDim2.new(1, -94, 0, 8), UDim2.fromOffset(80, 20), Enum.TextXAlignment.Right)
-	local track = round(new("Frame", {Size = UDim2.new(1, -28, 0, 8), Position = UDim2.new(0, 14, 1, -22), BackgroundColor3 = C.darkest, BorderSizePixel = 0}, f), 4)
-	local fill = round(new("Frame", {Size = UDim2.new(0, 0, 1, 0), BackgroundColor3 = C.blurple, BorderSizePixel = 0}, track), 4)
-	local knob = round(new("Frame", {Size = UDim2.fromOffset(16, 16), AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0, 0, 0.5, 0), BackgroundColor3 = C.white, BorderSizePixel = 0}, track), 8)
-	local grab = new("TextButton", {Text = "", BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 28), Position = UDim2.new(0, 0, 0.5, -14)}, track)
-	local function render()
-		local a = (get() - lo) / (hi - lo)
-		fill.Size = UDim2.new(a, 0, 1, 0)
-		knob.Position = UDim2.new(a, 0, 0.5, 0)
-		val.Text = get() .. suffix
-	end
-	local dragging = false
-	local function fromX(x)
-		local a = math.clamp((x - track.AbsolutePosition.X) / track.AbsoluteSize.X, 0, 1)
-		set(math.clamp(math.floor(lo + (hi - lo) * a + 0.5), lo, hi))
-		render()
-	end
-	grab.InputBegan:Connect(function(i)
-		if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			fromX(i.Position.X)
-		end
-	end)
-	conns[#conns + 1] = UIS.InputChanged:Connect(function(i)
-		if dragging and (i.UserInputType == Enum.UserInputType.MouseMovement or i.UserInputType == Enum.UserInputType.Touch) then
-			fromX(i.Position.X)
-		end
-	end)
-	conns[#conns + 1] = UIS.InputEnded:Connect(function(i)
-		if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then dragging = false end
-	end)
-	render()
-end
-
-local cIn = card(pSet, 84)
-label(cIn, "Input mode", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -28, 0, 20))
-label(cIn, "Mimic presses your real keys. In-game sends input straight to the game.", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 28), UDim2.new(1, -28, 0, 16))
-local modeBtns = {}
-local function refreshMode()
-	for m, b in pairs(modeBtns) do
-		b.BackgroundColor3 = m == S.input and C.blurple or C.darkest
-		b.TextColor3 = m == S.input and C.white or C.muted
-	end
-end
-for i, m in ipairs({{"mimic", "Mimic keyboard"}, {"ingame", "In-game input"}}) do
-	local b = round(new("TextButton", {
-		Text = m[2], Font = Enum.Font.GothamMedium, TextSize = 13, BorderSizePixel = 0, AutoButtonColor = false,
-		Size = UDim2.new(0.5, -20, 0, 30), Position = UDim2.new(i == 1 and 0 or 0.5, i == 1 and 14 or 6, 0, 46),
-	}, cIn), 5)
-	modeBtns[m[1]] = b
-	b.MouseButton1Click:Connect(function()
-		releaseAll()
-		S.input = m[1]
-		refreshMode()
-	end)
-end
-refreshMode()
-
-slider(pSet, "Hit offset", "Shift hit timing earlier (-) or later (+)", function() return S.offset end, function(v) S.offset = v end, -80, 80, " ms")
-slider(pSet, "Humanize", "Random timing variation on each note", function() return S.humanize end, function(v) S.humanize = v end, 0, 40, " ms")
-
-local cHuman = card(pSet, 58)
-label(cHuman, "Human clicker", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -90, 0, 20))
-label(cHuman, "Releases each key after a random time, like a real player", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 30), UDim2.new(1, -90, 0, 18))
-switch(cHuman, function() return S.human end, function(v) S.human = v end, UDim2.new(1, -56, 0.5, -12))
-
-local c4 = card(pSet, 58)
-label(c4, "Skip death notes", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -90, 0, 20))
-label(c4, "Never presses notes the game flags as harmful", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 30), UDim2.new(1, -90, 0, 18))
-switch(c4, function() return S.skipBad end, function(v) S.skipBad = v end, UDim2.new(1, -56, 0.5, -12))
-
-local cMiss = card(pGli, 58)
-label(cMiss, "No miss", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -90, 0, 20))
-label(cMiss, "Misses never count: no score loss, combo break or health loss", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 30), UDim2.new(1, -90, 0, 18))
-switch(cMiss, function() return S.noMiss end, function(v)
-	S.noMiss = v
-	env.__AP_noMiss = v
-end, UDim2.new(1, -56, 0.5, -12))
-
-local c5 = card(pUnl, 96)
-label(c5, "Unlock All (client-side)", 14, C.white, Enum.Font.GothamBold, UDim2.fromOffset(14, 8), UDim2.new(1, -28, 0, 20))
-local unlInfo = label(c5, "Unlocks items in your own game view only. The server still decides what you really own.", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(14, 28), UDim2.new(1, -28, 0, 32))
-unlInfo.TextWrapped = true
-unlInfo.TextYAlignment = Enum.TextYAlignment.Top
-unlInfo.TextTruncate = Enum.TextTruncate.None
-local unlBtn = round(new("TextButton", {
-	Text = "Unlock All", Font = Enum.Font.GothamBold, TextSize = 13, TextColor3 = C.white, BackgroundColor3 = C.blurple, BorderSizePixel = 0,
-	AutoButtonColor = false, Size = UDim2.fromOffset(110, 28), Position = UDim2.fromOffset(14, 60),
-}, c5), 5)
-local unlStatus = label(c5, "", 12, C.muted, Enum.Font.Gotham, UDim2.fromOffset(134, 60), UDim2.new(1, -148, 0, 28))
-unlBtn.MouseButton1Click:Connect(function()
-	unlStatus.Text = "Working..."
-	task.spawn(function()
-		local ok, res = pcall(unlockAll)
-		unlStatus.Text = ok and res or ("Error: " .. tostring(res))
-	end)
-end)
-
-local user = new("Frame", {Size = UDim2.new(1, 0, 0, 52), Position = UDim2.new(0, 0, 1, -52), BackgroundColor3 = C.panel, BorderSizePixel = 0}, side)
-local avatar = round(new("ImageLabel", {Size = UDim2.fromOffset(32, 32), Position = UDim2.fromOffset(10, 10), BackgroundColor3 = C.darkest, BorderSizePixel = 0}, user), 16)
-task.spawn(function()
-	local ok, img = pcall(Players.GetUserThumbnailAsync, Players, lp.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
-	if ok then avatar.Image = img end
-end)
-local dotRing = round(new("Frame", {Size = UDim2.fromOffset(14, 14), Position = UDim2.fromOffset(31, 31), BackgroundColor3 = C.panel, BorderSizePixel = 0}, user), 7)
-local dot = round(new("Frame", {Size = UDim2.fromOffset(10, 10), Position = UDim2.fromOffset(2, 2), BackgroundColor3 = C.grey, BorderSizePixel = 0}, dotRing), 5)
-label(user, lp.DisplayName, 13, C.white, Enum.Font.GothamBold, UDim2.fromOffset(52, 8), UDim2.new(1, -58, 0, 18))
-local userSub = label(user, "Autoplay off", 11, C.muted, Enum.Font.Gotham, UDim2.fromOffset(52, 26), UDim2.new(1, -58, 0, 16))
-
-local dragging, startPos, startMouse
-bar.InputBegan:Connect(function(i)
-	if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then
-		dragging, startPos, startMouse = true, main.Position, i.Position
-	end
-end)
-conns[#conns + 1] = UIS.InputChanged:Connect(function(i)
-	if dragging and (i.UserInputType == Enum.UserInputType.MouseMovement or i.UserInputType == Enum.UserInputType.Touch) then
-		local d = i.Position - startMouse
-		main.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + d.X, startPos.Y.Scale, startPos.Y.Offset + d.Y)
-	end
-end)
-conns[#conns + 1] = UIS.InputEnded:Connect(function(i)
-	if i.UserInputType == Enum.UserInputType.MouseButton1 or i.UserInputType == Enum.UserInputType.Touch then dragging = false end
-end)
-conns[#conns + 1] = UIS.InputBegan:Connect(function(i)
-	if i.KeyCode == Enum.KeyCode.RightShift then main.Visible = not main.Visible end
-end)
-
-local minimized = false
-minBtn.MouseButton1Click:Connect(function()
-	minimized = not minimized
-	main.Size = minimized and UDim2.fromOffset(560, 26) or UDim2.fromOffset(560, 360)
-end)
-
-local function destroy()
-	S.on = false
-	env.__AP_noMiss = false
-	releaseAll()
-	for _, c in ipairs(conns) do c:Disconnect() end
-	gui:Destroy()
-	env.__AP = nil
-end
-env.__AP = destroy
-closeBtn.MouseButton1Click:Connect(destroy)
-
-local warned = {}
-local function guard(tag, f)
-	setthreadidentity(8)
-	local ok, err = pcall(f)
-	if not ok and not warned[tag] then
-		warned[tag] = true
-		warn("[Afternight] " .. tag .. ": " .. tostring(err))
-	end
-end
-
-local function updateStatus()
-	env.__AP_noMiss = S.noMiss
-	local n, keys = 0, {}
-	guard("keycount", function() n = keyCount() end)
-	guard("keys", function()
-		for lane = 0, n - 1 do
-			local _, k = keyFor(lane)
-			keys[#keys + 1] = k or "?"
-		end
-	end)
-	guard("text", function()
-		stText.Text = string.format("%s  •  %dK\nKeys: %s\nHit %d   •   Skipped %d",
-			S.strumline and "Song found" or (S.scanning and "Scanning..." or "No song found"),
-			n, table.concat(keys, " "), S.hit, S.skipped)
-	end)
-	guard("dot", function() dot.BackgroundColor3 = S.on and C.green or C.grey end)
-	guard("sub", function() userSub.Text = S.on and "Autoplay on" or "Autoplay off" end)
-	guard("switch", refreshOn)
-end
-
-local lastStatus = 0
-conns[#conns + 1] = RS.Heartbeat:Connect(function(dt)
-	setthreadidentity(8)
-	S.frameMs = math.clamp(dt * 500, 2, 25)
-	guard("step", step)
-	if os.clock() - lastStatus > 0.25 then
-		lastStatus = os.clock()
-		updateStatus()
-	end
-end)
-
-showPage("autoplayer")
-task.spawn(scan)
+then v257+= #v391 if (v391[1] and v391[1775 -(1111 + 663) ].mustPress) then v258=true;end break;end end end end v356=1;end end end if (v256==(1580 -(874 + 705))) then if (v257>0) then if v258 then v257+=1000000 end if (v257>=v146) then v145,v146=v254,v257;end end break;end end break;end if ((0 + 0)==v255) then local v319=0 + 0 ;while true do if (v319==(0 -0)) then v256=0;v257=nil;v319=1 + 0 ;end if (v319==1) then v255=680 -(642 + 37) ;break;end end end end end if (v145 and (v145~=v18.strumline)) then v31();v21=setmetatable({},{[v7("\254\125\63\217\1\196","\101\161\34\82\182")]="k"});v18.strumline=v145;v18.lastNotes=os.clock();end v18.scanning=false;end local function v35() local v147=0 + 0 ;local v148;local v149;local v150;local v151;while true do if (v147==(0 + 0)) then v148=v13.SongPosition;if (v148<(v23-(2008 -1208))) then v31();v21=setmetatable({},{[v7("\215\50\84\241\223\231","\78\136\109\57\158\187\130\226")]="k"});v18.strumline=nil;end v23=v148;for v320,v321 in pairs(v19) do if (v148>=v321) then v30(v320);end end v147=1;end if (v147==1) then if ( not v18.scanning and ((os.clock() -v18.lastScan)>(455 -(233 + 221)))) then task.spawn(v34);end v149=v18.strumline;if  not v149 then return;end v150=0 -0 ;v147=2;end if (v147==3) then for v322,v323 in ipairs({v7("\236\142\2\251\42","\56\162\225\118\158\89\142"),v7("\105\11\211\191\35\207\82\43\207\187\39\203","\184\60\101\160\207\66")}) do local v324=rawget(v149,v323);if (type(v324)==v7("\37\131\126\176\52","\220\81\226\28")) then for v357,v358 in ipairs(v324) do local v359=v358.strumTime;if (v359 and  not v21[v358] and  not v358.isSustain and (v358.mustPress~=false)) then if (v358.wasHit or v358.hit or v358.missed or v358.killed) then v21[v358]=true;elseif (v18.skipBad and v32(v358)) then local v399=0;local v400;while true do if (v399==(0 + 0)) then v400=0;while true do if (v400==(805 -(266 + 539))) then v21[v358]=true;v18.skipped+=1 break;end end break;end end else local v401=v22[v358];if  not v401 then v401=v18.offset + (((v18.humanize>0) and math.random( -v18.humanize,v18.humanize)) or (0 -0)) ;v22[v358]=v401;end if ((v148 + v401 + v18.frameMs)>=v359) then local v411=1225 -(636 + 589) ;while true do if (v411==0) then v21[v358]=true;if ((v148-v359)<(474 -274)) then local v427=0 -0 ;local v428;local v429;local v430;while true do if (3==v427) then v19[v428]=math.max(v429,v148) + v430 ;v18.hit+=(1 + 0) break;end if (v427==(1 + 1)) then v430=((v429>v359) and (1030 -(657 + 358))) or (119 -74) ;if v18.human then v430=((v429>v359) and math.random(0 -0 ,1232 -(1151 + 36) )) or math.random(49 + 1 ,140) ;end v427=1 + 2 ;end if (v427==(0 -0)) then v428=(v358.noteData or 0)%v151 ;v30(v428);v427=1833 -(1552 + 280) ;end if (v427==(835 -(64 + 770))) then v29(v428,true);v429=math.max(v358.susEndTime or v359 ,v359);v427=2 + 0 ;end end end break;end end end end end end end end break;end if (v147==2) then for v325,v326 in ipairs({v7("\16\48\237\244\45","\145\94\95\153"),v7("\200\195\7\197\79\160\243\227\27\193\75\164","\215\157\173\116\181\46")}) do local v327=rawget(v149,v326);if (type(v327)==v7("\33\181\137\254\223","\186\85\212\235\146")) then v150+= #v327 end end if (v150>0) then v18.lastNotes=os.clock();elseif ((os.clock() -(v18.lastNotes or os.clock()))>(1 + 3)) then local v360=1243 -(157 + 1086) ;local v361;while true do if (v360==(0 -0)) then v361=0 -0 ;while true do if (v361==(0 -0)) then local v402=0 -0 ;while true do if (v402==0) then v18.strumline,v18.lastNotes=nil,nil;return;end end end end break;end end end if  not v18.on then return;end v151=v24();v147=822 -(599 + 220) ;end end end local function v36() local v152=0 -0 ;local v153;local v154;local v155;local v156;while true do if (v152==0) then v153=v14.GetLocalData();v154=v11.Events.Assets.GetShopAssets:InvokeServer();v152=1932 -(1813 + 118) ;end if (v152==(2 + 0)) then for v328,v329 in pairs(v17) do pcall(v14.triggerChange,v329);end return ("Unlocked %d new items (%d in catalog)"):format(v155,v156);end if (v152==(1218 -(841 + 376))) then local v308=0 -0 ;while true do if (v308==0) then v155,v156=0,0 + 0 ;for v362,v363 in pairs(v17) do local v364=0 -0 ;local v365;local v366;while true do if (v364==(859 -(464 + 395))) then v365,v366=v154[v362],v153[v363];if ((type(v365)==v7("\7\212\128\247\239","\167\115\181\226\155\138")) and (type(v366)==v7("\246\35\229\80\126","\166\130\66\135\60\27\17"))) then local v394=0 -0 ;local v395;while true do if (v394==(0 + 0)) then local v412=0;while true do if (v412==(838 -(467 + 370))) then v394=1 -0 ;break;end if ((0 + 0)==v412) then v395={};for v424,v425 in pairs(v366) do v395[v425]=true;end v412=1;end end end if (v394==(3 -2)) then for v418,v419 in pairs(v365) do local v420=0;local v421;while true do if (v420==(1 + 0)) then if ((v421~=nil) and  not v395[v421]) then local v434=0 -0 ;while true do if (v434==0) then v395[v421]=true;table.insert(v366,v421);v434=1;end if (v434==(521 -(150 + 370))) then v155+=(1283 -(74 + 1208)) break;end end end break;end if (v420==0) then v421=((type(v419)==v7("\80\75\204\121\53","\80\36\42\174\21")) and v419.name) or v419 ;v156+=1 v420=2 -1 ;end end end break;end end end break;end end end v308=4 -3 ;end if (v308==(1 + 0)) then v152=392 -(14 + 376) ;break;end end end end end local v37={[v7("\74\17\37\113\75\3\35","\26\46\112\87")]=Color3.fromRGB(52 -22 ,21 + 10 ,34),[v7("\170\42\175\113","\212\217\67\203\20\223\223\37")]=Color3.fromRGB(43,40 + 5 ,49),[v7("\183\140\161\220","\178\218\237\200")]=Color3.fromRGB(47 + 2 ,51,56),[v7("\166\180\232\213\186","\176\214\213\134")]=Color3.fromRGB(102 -67 ,36,31 + 9 ),[v7("\252\162\160\209\186","\57\148\205\214\180\200\54")]=Color3.fromRGB(142 -(23 + 55) ,156 -90 ,49 + 24 ),[v7("\6\248\45\32","\22\114\157\85\84")]=Color3.fromRGB(197 + 22 ,343 -121 ,225),[v7("\211\195\26\208\88","\200\164\171\115\164\61\150")]=Color3.fromRGB(255,81 + 174 ,255),[v7("\179\225\23\64\135","\227\222\148\99\37")]=Color3.fromRGB(1049 -(652 + 249) ,414 -259 ,2032 -(708 + 1160) ),[v7("\49\94\71\228\233\63\87","\153\83\50\50\150")]=Color3.fromRGB(238 -150 ,101,440 -198 ),[v7("\90\100\118\25\125","\45\61\22\19\124\19\203")]=Color3.fromRGB(62 -(10 + 17) ,38 + 127 ,89),[v7("\211\23\9","\217\161\114\109\149\98\16")]=Color3.fromRGB(1950 -(1400 + 332) ,105 -50 ,60),[v7("\21\50\61\101","\20\114\64\88\28\220")]=Color3.fromRGB(128,2040 -(242 + 1666) ,61 + 81 )};local v38=Instance.new(v7("\2\2\192\177\253\222\154\36\8","\221\81\97\178\212\152\176"));v38.Name=v7("\236\242\9\244\42\193\230\4\254\8\234\210\52","\122\173\135\125\155");v38.ResetOnSpawn=false;v38.DisplayOrder=367 + 632 ;v38.Parent=gethui();local function v43(v157,v158,v159) local v160=Instance.new(v157);for v259,v260 in pairs(v158) do v160[v259]=v260;end v160.Parent=v159;return v160;end local function v44(v162,v163) local v164=0;while true do if (v164==0) then v43(v7("\177\232\35\182\45\63\205\150","\168\228\161\96\217\95\81"),{[v7("\248\222\60\82\42\69\233\208\42\85\58\68","\55\187\177\78\60\79")]=UDim.new(0 + 0 ,v163 or (948 -(850 + 90)) )},v162);return v162;end end end local function v45(v165,v166,v167,v168,v169,v170,v171,v172) return v43(v7("\25\203\71\255\106\206\130\40\194","\224\77\174\63\139\38\175"),{[v7("\176\68\64\58","\78\228\33\56")]=v166,[v7("\250\123\170\23\182\199\100\183","\229\174\30\210\99")]=v167,[v7("\47\232\158\69\206\50\53\20\255\213","\89\123\141\230\49\141\93")]=v168,[v7("\213\126\248\24","\42\147\17\150\108\112")]=v169 or Enum.Font.Gotham ,[v7("\45\167\46\116\224\250\0\179\35\123\211\250\14\168\62\111\230\250\10\168\46\102","\136\111\198\77\31\135")]=1 -0 ,[v7("\50\6\180\95\169\237\24\167","\201\98\105\199\54\221\132\119")]=v170,[v7("\138\5\153\36","\204\217\108\227\65\98\85")]=v171,[v7("\106\198\237\241\20\225\82\202\242\235\33\197\80\215","\160\62\163\149\133\76")]=v172 or Enum.TextXAlignment.Left ,[v7("\226\165\21\59\247\196\181\3\44\194\194\165","\163\182\192\109\79")]=Enum.TextTruncate.AtEnd},v165);end local v46=v44(v43(v7("\18\52\1\205\240","\149\84\70\96\160"),{[v7("\11\15\23\232","\141\88\102\109")]=UDim2.fromOffset(1950 -(360 + 1030) ,319 + 41 ),[v7("\131\92\217\121\14\52\90\207","\161\211\51\170\16\122\93\53")]=UDim2.new(0.5, -280,0.5, -(508 -328)),[v7("\217\175\177\35\252\188\189\61\245\170\145\39\247\161\160\123","\72\155\206\210")]=v37.main,[v7("\100\117\70\10\54\84\73\93\20\54\118\115\76\11\63","\83\38\26\52\110")]=0 -0 ,[v7("\123\27\46\86\75\51\34\85\91\18\41\66\89\25\51\85","\38\56\119\71")]=true},v38),1669 -(909 + 752) );local v47=v43(v7("\213\253\89\219\32","\54\147\143\56\182\69"),{[v7("\229\136\229\76","\191\182\225\159\41")]=UDim2.new(1,1223 -(109 + 1114) ,0 -0 ,11 + 15 ),[v7("\9\19\43\94\140\149\205\62\28\44\118\132\139\205\57\65","\162\75\114\72\53\235\231")]=v37.darkest,[v7("\174\51\86\230\86\16\191\53\94\231\99\11\148\57\72","\98\236\92\36\130\51")]=0},v46);v45(v47,v7("\133\31\24\191\87\166\188\55\172\13","\80\196\121\108\218\37\200\213"),254 -(6 + 236) ,v37.muted,Enum.Font.GothamMedium,UDim2.fromOffset(8 + 4 ,0 + 0 ),UDim2.new(1, -(188 -108),1 -0 ,1133 -(1076 + 57) ));local v48=v43(v7("\52\118\26\107\105\27\158\20\124\12","\234\96\19\98\31\43\110"),{[v7("\50\26\74\211","\235\102\127\50\167\204\18")]="X",[v7("\100\164\237\55\119\39\74\164","\78\48\193\149\67\36")]=3 + 11 ,[v7("\22\17\142\12","\33\80\126\224\120")]=Enum.Font.GothamBold,[v7("\216\173\27\208\127\227\164\12\214\15","\60\140\200\99\164")]=v37.muted,[v7("\165\245\7\45\165\149\251\17\40\166\179\230\5\40\177\151\245\22\35\172\132\237","\194\231\148\100\70")]=1,[v7("\117\69\219\166","\168\38\44\161\195\150")]=UDim2.fromOffset(723 -(579 + 110) ,3 + 23 ),[v7("\176\243\145\127\36\225\185\24","\118\224\156\226\22\80\136\214")]=UDim2.new(1 + 0 , -34,0 + 0 ,407 -(174 + 233) )},v47);local v49=v43(v7("\118\235\65\148\96\251\77\148\77\224","\224\34\142\57"),{[v7("\234\162\221\201","\110\190\199\165\189\19\145\61")]="-",[v7("\238\238\111\252\184\206\192\238","\167\186\139\23\136\235")]=50 -32 ,[v7("\60\186\134\25","\109\122\213\232")]=Enum.Font.GothamBold,[v7("\218\242\186\36\205\248\174\63\252\164","\80\142\151\194")]=v37.muted,[v7("\33\199\116\71\4\212\120\89\13\194\67\94\2\200\100\92\2\212\114\66\0\223","\44\99\166\23")]=1 -0 ,[v7("\79\254\51\51","\196\28\151\73\86\83")]=UDim2.fromOffset(16 + 18 ,1200 -(663 + 511) ),[v7("\195\12\58\25\150\81\23\120","\22\147\99\73\112\226\56\120")]=UDim2.new(1 + 0 , -68,0 + 0 ,0)},v47);local v50=v43(v7("\158\103\227\248\136","\237\216\21\130\149"),{[v7("\177\71\69\90","\62\226\46\63\63\208\169")]=UDim2.new(0 -0 ,170,1, -(16 + 10)),[v7("\213\22\70\138\11\4\32\80","\62\133\121\53\227\127\109\79")]=UDim2.fromOffset(0,26),[v7("\50\21\49\254\209\188\173\5\26\54\214\217\162\173\2\71","\194\112\116\82\149\182\206")]=v37.side,[v7("\27\167\94\28\197\240\61\48\178\73\40\201\250\11\53","\110\89\200\44\120\160\130")]=0 -0 },v46);v45(v50,v7("\138\229\127\99\113\100\18\106\131\247","\45\203\163\43\38\35\42\91"),31 -18 ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(7 + 7 ,0),UDim2.new(1 -0 , -(15 + 5),0 + 0 ,758 -(478 + 244) ));v43(v7("\244\151\221\46\130","\52\178\229\188\67\231\201"),{[v7("\18\72\74\1","\67\65\33\48\100\151\60")]=UDim2.new(518 -(440 + 77) ,0 + 0 ,0 -0 ,1557 -(655 + 901) ),[v7("\239\232\189\209\231\214\232\160","\147\191\135\206\184")]=UDim2.fromOffset(0,7 + 29 ),[v7("\166\41\165\202\223\65\189\145\38\162\226\215\95\189\150\123","\210\228\72\198\161\184\51")]=v37.darkest,[v7("\20\70\225\20\118\220\5\64\233\21\67\199\46\76\255","\174\86\41\147\112\19")]=0 + 0 },v50);local v51=v43(v7("\125\18\140\6\32","\203\59\96\237\107\69\111\113"),{[v7("\23\31\182\228","\183\68\118\204\129\81\144")]=UDim2.new(1 + 0 , -170,3 -2 , -(1471 -(695 + 750))),[v7("\62\162\99\237\31\139\1\163","\226\110\205\16\132\107")]=UDim2.fromOffset(580 -410 ,39 -13 ),[v7("\201\194\227\210\70\249\204\245\215\69\223\209\225\215\82\251\194\242\220\79\232\218","\33\139\163\128\185")]=3 -2 },v46);local v52=v43(v7("\113\74\5\211\82","\190\55\56\100"),{[v7("\101\166\38\27","\147\54\207\92\126\115\131")]=UDim2.new(352 -(285 + 66) ,0 -0 ,0,36),[v7("\47\48\54\118\10\108\2\36\59\121\57\108\12\63\38\109\12\108\8\63\54\100","\30\109\81\85\29\109")]=1},v51);local v53=v45(v52,v7("\188\49\85\163\34\209\236\243\112\77\179\36","\156\159\17\52\214\86\190"),1324 -(682 + 628) ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(3 + 13 ,299 -(176 + 123) ),UDim2.new(1 + 0 , -20,1 + 0 ,269 -(239 + 30) ));v43(v7("\136\253\188\177\171","\220\206\143\221"),{[v7("\181\116\55\18","\178\230\29\77\119\184\172")]=UDim2.new(1,0 + 0 ,0 + 0 ,1 -0 ),[v7("\197\177\25\18\99\241\250\176","\152\149\222\106\123\23")]=UDim2.fromOffset(0 -0 ,36),[v7("\255\39\245\72\178\207\41\227\77\177\254\41\250\76\167\142","\213\189\70\150\35")]=v37.darkest,[v7("\109\90\102\12\74\71\71\1\85\80\68\1\87\80\120","\104\47\53\20")]=315 -(306 + 9) },v52);local v54,v55={},{};local function v56(v173) local v174=0 -0 ;while true do if (v174==(0 + 0)) then for v330,v331 in pairs(v54) do v331.Visible=v330==v173 ;end for v333,v334 in pairs(v55) do v334.BackgroundTransparency=((v333==v173) and 0) or (1 + 0) ;v334.TextColor3=((v333==v173) and v37.white) or v37.muted ;end v174=1 + 0 ;end if (v174==(2 -1)) then v53.Text=v7("\224\12","\111\195\44\225\124\220")   .. v173 ;break;end end end local function v57(v175,v176) local v177=1375 -(1140 + 235) ;local v178;local v179;while true do if ((1 + 0)==v177) then v43(v7("\38\133\182\93\23\168\143\82\20","\60\115\204\230"),{[v7("\215\59\239\116\238\52\236\92\226\60\255","\16\135\90\139")]=UDim.new(0 + 0 ,16),[v7("\100\117\2\55\71\90\127\102\125\1\59\90","\24\52\20\102\83\46\52")]=UDim.new(0 + 0 ,16),[v7("\244\46\37\32\6\202\40\21\43\31","\111\164\79\65\68")]=UDim.new(52 -(33 + 19) ,4),[v7("\246\216\135\218\39\228\193\251\140\202\58\229\203","\138\166\185\227\190\78")]=UDim.new(0 + 0 ,29 -19 )},v178);v54[v175]=v178;v177=1 + 1 ;end if ((0 -0)==v177) then v178=v43(v7("\235\69\18\124\167\167\209\72\7\85\185\170\213\67","\203\184\38\96\19\203"),{[v7("\10\122\99\68","\174\89\19\25\33")]=UDim2.new(1,0,1, -42),[v7("\31\29\65\71\227\142\4\33","\107\79\114\50\46\151\231")]=UDim2.fromOffset(0 + 0 ,731 -(586 + 103) ),[v7("\27\167\182\34\141\43\184\213\55\162\129\59\139\55\164\208\56\180\176\39\137\32","\160\89\198\213\73\234\89\215")]=1,[v7("\106\126\166\250\192\90\66\189\228\192\120\120\172\251\201","\165\40\17\212\158")]=0 + 0 ,[v7("\214\218\26\60\42\233\251\9\33\18\237\208\11\56\40\224\202\27","\70\133\185\104\83")]=9 -6 ,[v7("\55\70\86\37\197\8\103\69\56\224\9\68\67\47\234\11\73\75\56\154","\169\100\37\36\74")]=v37.darkest,[v7("\35\134\172\70\1\148\145\89\26\130","\48\96\231\194")]=UDim2.new(),[v7("\233\79\26\34\20\217\187\138\203\121\15\35\15\217\188\176\193\64\11","\227\168\58\110\77\121\184\207")]=Enum.AutomaticSize.Y,[v7("\77\53\172\73\179\215\116","\197\27\92\223\32\209\187\17")]=false},v51);v43(v7("\54\118\239\242\16\75\239\250\26\80\214\239","\155\99\63\163"),{[v7("\178\208\165\137\176\138\133","\228\226\177\193\237\217")]=UDim.new(1488 -(1309 + 179) ,18 -8 ),[v7("\7\191\49\242\27\162\39\227\38","\134\84\208\67")]=Enum.SortOrder.LayoutOrder},v178);v177=1;end if (v177==(1 + 1)) then v179=v44(v43(v7("\255\113\221\35\112\54\13\223\123\203","\121\171\20\165\87\50\67"),{[v7("\242\61\161\34","\98\166\88\217\86\217")]=v7("\182\182\57\66\198\156","\188\150\150\25\97\230")   .. v175 ,[v7("\238\140\71\22\63\228\192\140","\141\186\233\63\98\108")]=37 -23 ,[v7("\215\229\34\162","\69\145\138\76\214")]=Enum.Font.GothamMedium,[v7("\68\202\145\157\156\25\124\192\155\218","\118\16\175\233\233\223")]=v37.muted,[v7("\169\133\54\176\233\153\114\158\138\49\152\225\135\114\153\215","\29\235\228\85\219\142\235")]=v37.hover,[v7("\31\213\185\214\112\92\40\71\51\208\142\207\118\64\52\66\60\198\191\211\116\87","\50\93\180\218\189\23\46\71")]=1 + 0 ,[v7("\255\177\79\67\102\201\92\202\171\85\111\75\208\71\204","\40\190\196\59\44\36\188")]=false,[v7("\15\76\198\177","\109\92\37\188\212\154\29")]=UDim2.new(1 -0 , -(31 -15),609 -(295 + 314) ,32),[v7("\52\224\183\202\37\83\11\225","\58\100\143\196\163\81")]=UDim2.fromOffset(8,v176),[v7("\46\71\59\183\7\104\233\7\29\76\46\166\49\93","\110\122\34\67\195\95\41\133")]=Enum.TextXAlignment.Left},v50),12 -7 );v55[v175]=v179;v177=1965 -(1300 + 662) ;end if (v177==3) then v179.MouseButton1Click:Connect(function() v56(v175);end);return v178;end end end local v58=v57(v7("\116\164\79\69\198\121\176\66\79\196","\182\21\209\59\42"),144 -98 );local v59=v57(v7("\164\82\209\9\40\176\176\68","\222\215\55\165\125\65"),1837 -(1178 + 577) );local v60=v57(v7("\57\223\202\21\241\202\254","\42\76\177\166\122\146\161\141"),62 + 56 );local v61=v57(v7("\162\134\12\218\122\126\160\153","\22\197\234\101\174\25"),154);local v62=0 -0 ;local function v63(v180,v181) local v182=1405 -(851 + 554) ;while true do if (v182==0) then v62+=(1 + 0) return v44(v43(v7("\11\38\164\209\115","\230\77\84\197\188\22\207\183"),{[v7("\202\29\220\249","\85\153\116\166\156\236\193\144")]=UDim2.new(2 -1 ,0 -0 ,302 -(115 + 187) ,v181),[v7("\134\225\78\184\227\18\171\245\67\183\199\15\168\239\95\224","\96\196\128\45\211\132")]=v37.side,[v7("\23\130\105\91\215\189\135\209\47\136\75\86\202\170\184","\184\85\237\27\63\178\207\212")]=0 + 0 ,[v7("\36\88\16\80\29\77\38\77\12\92\27","\63\104\57\105")]=v62},v180),8 + 0 );end end end local function v64(v183,v184,v185,v186) local v187=0 -0 ;local v188;local v189;local v190;while true do if (v187==3) then return v190;end if (v187==1) then local v312=1161 -(160 + 1001) ;while true do if ((1 + 0)==v312) then v187=2 + 0 ;break;end if (v312==(0 -0)) then v190=nil;function v190() local v367=358 -(237 + 121) ;local v368;while true do if (v367==(897 -(525 + 372))) then local v387=0 -0 ;while true do if (v387==(0 -0)) then v368=v184();v188.BackgroundColor3=(v368 and v37.green) or v37.grey ;v387=143 -(96 + 46) ;end if (v387==(778 -(643 + 134))) then v367=1 + 0 ;break;end end end if (v367==(2 -1)) then v189.Position=(v368 and UDim2.fromOffset(21,11 -8 )) or UDim2.fromOffset(3,3 + 0 ) ;break;end end end v312=1 -0 ;end end end if (v187==0) then local v313=0 -0 ;while true do if ((720 -(316 + 403))==v313) then v187=1 + 0 ;break;end if (0==v313) then v188=v44(v43(v7("\63\130\188\80\41\146\176\80\4\137","\36\107\231\196"),{[v7("\105\176\186\147","\231\61\213\194")]="",[v7("\40\184\41\124\43\184\41\103\6\163\30\124\5\162\47","\19\105\205\93")]=false,[v7("\154\1\196\132","\95\201\104\190\225")]=UDim2.fromOffset(115 -73 ,24),[v7("\159\196\210\199\187\194\206\192","\174\207\171\161")]=v186,[v7("\207\241\31\247\253\197\222\247\23\246\200\222\245\251\1","\183\141\158\109\147\152")]=0 + 0 },v183),29 -17 );v189=v44(v43(v7("\10\27\231\1\41","\108\76\105\134"),{[v7("\216\204\171\228","\174\139\165\209\129")]=UDim2.fromOffset(13 + 5 ,18),[v7("\129\178\225\202\193\17\127\109\173\183\193\206\202\12\98\43","\24\195\211\130\161\166\99\16")]=v37.white,[v7("\100\12\251\40\86\4\117\10\243\41\99\31\94\6\229","\118\38\99\137\76\51")]=0 + 0 },v188),30 -21 );v313=4 -3 ;end end end if (v187==(3 -1)) then v188.MouseButton1Click:Connect(function() v185( not v184());v190();end);v190();v187=1 + 2 ;end end end local v65=v63(v58,113 -55 );v45(v65,v7("\220\51\17\29\25\44\252\63","\64\157\70\101\114\105"),1 + 14 ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(41 -27 ,25 -(12 + 5) ),UDim2.new(1, -(349 -259),0 -0 ,20));v45(v65,v7("\104\161\179\240\80\84\160\162\163\30\79\188\162\240\80\70\167\181\163\9\79\189\231\244\24\73\164\162\163\17\0\187\168\237\23\0\161\180\163\0\76\169\190\234\30\71","\112\32\200\199\131"),25 -13 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(14,74 -44 ),UDim2.new(1, -(19 + 71),1973 -(1656 + 317) ,17 + 1 ));local v66=v64(v65,function() return v18.on;end,function(v191) local v192=0;while true do if ((0 + 0)==v192) then v18.on=v191;if  not v191 then v31();end break;end end end,UDim2.new(1, -(148 -92),0.5 -0 , -(366 -(5 + 349))));local v67=v63(v58,370 -292 );local v68=v45(v67,"",1284 -(266 + 1005) ,v37.text,Enum.Font.Gotham,UDim2.fromOffset(10 + 4 ,27 -19 ),UDim2.new(1 -0 , -(1796 -(561 + 1135)),1 -0 , -16));v68.TextWrapped=true;v68.TextYAlignment=Enum.TextYAlignment.Top;v68.TextTruncate=Enum.TextTruncate.None;local v74=v44(v43(v7("\24\85\68\172\225\190\54\56\95\82","\66\76\48\60\216\163\203"),{[v7("\142\131\97\231","\68\218\230\25\147\63\174")]=v7("\159\47\64\79\183\163","\214\205\74\51\44"),[v7("\220\67\236\232","\23\154\44\130\156")]=Enum.Font.GothamMedium,[v7("\37\163\181\186\5\26\11\163","\115\113\198\205\206\86")]=39 -27 ,[v7("\176\82\230\78\167\88\242\85\150\4","\58\228\55\158")]=v37.white,[v7("\150\136\211\37\59\191\58\161\135\212\13\51\161\58\166\218","\85\212\233\176\78\92\205")]=v37.blurple,[v7("\104\87\154\230\79\74\187\235\80\93\184\235\82\93\132","\130\42\56\232")]=1066 -(507 + 559) ,[v7("\203\160\48\236\98\42\254\161\43\237\99\48\230\186\54","\95\138\213\68\131\32")]=false,[v7("\25\33\187\70","\22\74\72\193\35")]=UDim2.fromOffset(165 -99 ,28),[v7("\28\118\247\81\56\112\235\86","\56\76\25\132")]=UDim2.new(1, -(247 -167),0.5, -(402 -(212 + 176)))},v67),910 -(250 + 655) );v74.MouseButton1Click:Connect(function() local v193=0;while true do if (v193==(2 -1)) then v18.lastScan=0 -0 ;break;end if (v193==(0 -0)) then v31();v18.strumline=nil;v193=1957 -(1869 + 87) ;end end end);local function v75(v194,v195,v196,v197,v198,v199,v200,v201) local v202=v63(v194,270 -192 );v45(v202,v195,1915 -(484 + 1417) ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(29 -15 ,13 -5 ),UDim2.new(774 -(48 + 725) , -(179 -69),0,53 -33 ));v45(v202,v196,7 + 5 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(37 -23 ,28),UDim2.new(1 + 0 , -28,0,5 + 11 ));local v203=v45(v202,"",14,v37.white,Enum.Font.GothamBold,UDim2.new(854 -(152 + 701) , -94,0,8),UDim2.fromOffset(80,1331 -(430 + 881) ),Enum.TextXAlignment.Right);local v204=v44(v43(v7("\120\211\170\43\202","\175\62\161\203\70"),{[v7("\15\212\217\22","\85\92\189\163\115")]=UDim2.new(1, -(11 + 17),895 -(557 + 338) ,8),[v7("\25\163\35\49\61\165\63\54","\88\73\204\80")]=UDim2.new(0 + 0 ,38 -24 ,1, -(76 -54)),[v7("\12\130\19\77\46\200\33\150\30\66\10\213\34\140\2\21","\186\78\227\112\38\73")]=v37.darkest,[v7("\222\88\239\81\86\104\207\94\231\80\99\115\228\82\241","\26\156\55\157\53\51")]=0 -0 },v202),8 -4 );local v205=v44(v43(v7("\170\202\23\212\189","\48\236\184\118\185\216"),{[v7("\214\180\77\53","\84\133\221\55\80\175")]=UDim2.new(801 -(499 + 302) ,866 -(39 + 827) ,2 -1 ,0),[v7("\159\230\39\173\192\78\178\242\42\162\228\83\177\232\54\245","\60\221\135\68\198\167")]=v37.blurple,[v7("\204\178\234\135\71\203\221\180\226\134\114\208\246\184\244","\185\142\221\152\227\34")]=0 -0 },v204),15 -11 );local v206=v44(v43(v7("\126\215\86\247\70","\151\56\165\55\154\35\83"),{[v7("\147\74\31\235","\142\192\35\101")]=UDim2.fromOffset(23 -7 ,2 + 14 ),[v7("\247\123\42\171\232\158\156\25\223\123\61","\118\182\21\73\195\135\236\204")]=Vector2.new(0.5,0.5 -0 ),[v7("\56\51\9\73\16\4\242\6","\157\104\92\122\32\100\109")]=UDim2.new(0 + 0 ,0,0.5 -0 ,104 -(103 + 1) ),[v7("\129\167\204\193\58\53\130\190\173\162\236\197\49\40\159\248","\203\195\198\175\170\93\71\237")]=v37.white,[v7("\12\68\44\209\84\3\207\39\81\59\229\88\9\249\34","\156\78\43\94\181\49\113")]=0},v204),8);local v207=v43(v7("\70\237\220\183\41\86\109\102\231\202","\25\18\136\164\195\107\35"),{[v7("\220\40\177\91","\216\136\77\201\47\18\220\161")]="",[v7("\15\237\40\209\15\206\141\56\226\47\238\26\221\140\62\252\42\200\13\210\129\52","\226\77\140\75\186\104\188")]=555 -(475 + 79) ,[v7("\138\199\202\58","\47\217\174\176\95")]=UDim2.new(1,0 -0 ,0 -0 ,4 + 24 ),[v7("\136\210\101\11\166\93\119\40","\70\216\189\22\98\210\52\24")]=UDim2.new(0,0,0.5 + 0 , -(1517 -(1395 + 108)))},v204);local function v208() local v262=(v197() -v199)/(v200-v199) ;v205.Size=UDim2.new(v262,0 -0 ,1205 -(7 + 1197) ,0);v206.Position=UDim2.new(v262,0 + 0 ,0.5,0 + 0 );v203.Text=v197()   .. v201 ;end local v209=false;local function v210(v266) local v267=319 -(27 + 292) ;local v268;while true do if (v267==0) then v268=math.clamp((v266-v204.AbsolutePosition.X)/v204.AbsoluteSize.X ,0 -0 ,1 -0 );v198(math.clamp(math.floor(v199 + ((v200-v199) * v268) + 0.5 ),v199,v200));v267=1;end if (v267==(4 -3)) then v208();break;end end end v207.InputBegan:Connect(function(v269) if ((v269.UserInputType==Enum.UserInputType.MouseButton1) or (v269.UserInputType==Enum.UserInputType.Touch)) then local v317=0;while true do if (v317==(0 -0)) then v209=true;v210(v269.Position.X);break;end end end end);v20[ #v20 + (1 -0) ]=v9.InputChanged:Connect(function(v270) if (v209 and ((v270.UserInputType==Enum.UserInputType.MouseMovement) or (v270.UserInputType==Enum.UserInputType.Touch))) then v210(v270.Position.X);end end);v20[ #v20 + (140 -(43 + 96)) ]=v9.InputEnded:Connect(function(v271) if ((v271.UserInputType==Enum.UserInputType.MouseButton1) or (v271.UserInputType==Enum.UserInputType.Touch)) then v209=false;end end);v208();end local v76=v63(v59,84);v45(v76,v7("\243\209\179\146\199\154\210\172\131\214","\179\186\191\195\231"),14,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(14,32 -24 ),UDim2.new(1, -(63 -35),0 + 0 ,20));v45(v76,v7("\212\54\21\237\250\127\8\246\252\44\11\225\234\127\1\235\236\45\88\246\252\62\20\164\242\58\1\247\183\127\49\234\180\56\25\233\252\127\11\225\247\59\11\164\240\49\8\241\237\127\11\240\235\62\17\227\241\43\88\240\246\127\12\236\252\127\31\229\244\58\86","\132\153\95\120"),4 + 8 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(27 -13 ,11 + 17 ),UDim2.new(1 -0 , -28,0,16));local v77={};local function v78() for v272,v273 in pairs(v77) do v273.BackgroundColor3=((v272==v18.input) and v37.blurple) or v37.darkest ;v273.TextColor3=((v272==v18.input) and v37.white) or v37.muted ;end end for v213,v214 in ipairs({{v7("\188\187\3\36\244","\192\209\210\110\77\151\186"),v7("\205\10\47\224\252\132\235\6\59\235\240\197\242\7","\164\128\99\66\137\159")},{v7("\9\135\238\191\13\140","\222\96\233\137"),v7("\144\189\234\24\137\254\245\249\186\169\15\157\231","\144\217\211\199\127\232\147")}}) do local v215=0 -0 ;local v216;while true do if ((2 -1)==v215) then v216.MouseButton1Click:Connect(function() local v337=0 + 0 ;while true do if (v337==1) then v78();break;end if (v337==(0 + 0)) then v31();v18.input=v214[1];v337=973 -(357 + 615) ;end end end);break;end if (v215==0) then v216=v44(v43(v7("\204\42\38\60\247\80\22\80\247\33","\36\152\79\94\72\181\37\98"),{[v7("\227\221\95\43","\95\183\184\39")]=v214[2 + 0 ],[v7("\147\48\233\50","\98\213\95\135\70\52\224")]=Enum.Font.GothamMedium,[v7("\202\166\209\99\103\247\185\204","\52\158\195\169\23")]=13,[v7("\88\179\32\112\131\39\72\130\96\185\2\125\158\48\119","\235\26\220\82\20\230\85\27")]=0,[v7("\169\180\253\205\86\157\181\253\205\122\171\174\229\205\102","\20\232\193\137\162")]=false,[v7("\17\214\223\163","\17\66\191\165\198\135\236\119")]=UDim2.new(0.5 -0 , -20,0,26 + 4 ),[v7("\63\160\189\26\235\225\227\223","\177\111\207\206\115\159\136\140")]=UDim2.new(((v213==(2 -1)) and (0 + 0)) or 0.5 ,((v213==1) and (1 + 13)) or 6 ,0,29 + 17 )},v76),1306 -(384 + 917) );v77[v214[698 -(128 + 569) ]]=v216;v215=1544 -(1407 + 136) ;end end end v78();v75(v59,v7("\45\128\4\84\219\73\89\22\140\4","\63\101\233\112\116\180\47"),v7("\240\51\228\20\236\118\203\50\249\82\236\63\206\50\227\21\184\51\194\41\225\27\253\36\131\115\160\91\184\57\209\123\225\19\236\51\209\123\165\89\177","\86\163\91\141\114\152"),function() return v18.offset;end,function(v217) v18.offset=v217;end, -80,1967 -(687 + 1200) ,v7("\19\6\103","\90\51\107\20\19"));v75(v59,v7("\165\229\136\238\51\132\234\128","\93\237\144\229\143"),v7("\39\247\254\29\4\75\85\226\249\20\2\72\18\182\230\24\25\79\20\226\249\22\5\6\26\248\176\28\10\69\29\182\254\22\31\67","\38\117\150\144\121\107"),function() return v18.humanize;end,function(v219) v18.humanize=v219;end,0,1750 -(556 + 1154) ,v7("\109\182\253","\90\77\219\142"));local v79=v63(v59,58);v45(v79,v7("\206\17\44\56\66\71\121\234\13\34\50\73\21","\26\134\100\65\89\44\103"),49 -35 ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(109 -(9 + 86) ,429 -(275 + 146) ),UDim2.new(1 + 0 , -90,0,84 -(29 + 35) ));v45(v79,v7("\195\230\60\38\165\226\230\35\99\161\240\224\56\99\175\244\250\112\34\162\229\230\34\99\165\177\241\49\45\160\254\238\112\55\173\252\230\124\99\168\248\232\53\99\165\177\241\53\34\168\177\243\60\34\189\244\241","\196\145\131\80\67"),53 -41 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(14,89 -59 ),UDim2.new(4 -3 , -90,0 + 0 ,1030 -(53 + 959) ));v64(v79,function() return v18.human;end,function(v221) v18.human=v221;end,UDim2.new(1, -(464 -(312 + 96)),0.5, -(20 -8)));local v80=v63(v59,343 -(147 + 138) );v45(v80,v7("\45\187\15\24\88\236\27\177\18\0\88\230\17\164\3\27","\136\126\208\102\104\120"),913 -(813 + 86) ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(13 + 1 ,14 -6 ),UDim2.new(493 -(18 + 474) , -90,0 + 0 ,65 -45 ));v45(v80,v7("\86\143\216\70\189\18\45\67\125\153\221\70\188\18\51\94\108\143\221\3\187\90\56\17\127\139\195\70\239\84\49\80\127\153\142\66\188\18\53\80\106\135\200\86\163","\49\24\234\174\35\207\50\93"),1098 -(860 + 226) ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(317 -(121 + 182) ,4 + 26 ),UDim2.new(1241 -(988 + 252) , -(11 + 79),0 + 0 ,18));v64(v80,function() return v18.skipBad;end,function(v223) v18.skipBad=v223;end,UDim2.new(1, -56,0.5, -(1982 -(49 + 1921))));local v81=v63(v61,948 -(223 + 667) );v45(v81,v7("\34\253\189\133\120\31\225","\17\108\146\157\232"),66 -(51 + 1) ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(23 -9 ,17 -9 ),UDim2.new(1126 -(146 + 979) , -(26 + 64),0,625 -(311 + 294) ));v45(v81,v7("\102\202\7\254\42\187\11\205\17\251\42\186\11\192\27\248\33\188\17\131\26\226\111\187\72\204\6\232\111\164\68\208\7\161\111\171\68\206\22\226\111\170\89\198\21\230\111\167\89\131\28\232\46\164\95\203\84\225\32\187\88","\200\43\163\116\141\79"),12,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(14,83 -53 ),UDim2.new(1, -(39 + 51),0,1461 -(496 + 947) ));v64(v81,function() return v18.noMiss;end,function(v225) local v226=1358 -(1233 + 125) ;local v227;while true do if (v226==(0 + 0)) then v227=0;while true do if (v227==(0 + 0)) then v18.noMiss=v225;v15.__AP_noMiss=v225;break;end end break;end end end,UDim2.new(1 + 0 , -56,0.5, -(1657 -(963 + 682))));local v82=v63(v60,81 + 15 );v45(v82,v7("\138\56\49\140\179\255\163\158\58\49\195\248\247\239\182\51\51\151\253\231\234\187\51\116","\131\223\86\93\227\208\148"),14,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(1518 -(504 + 1000) ,6 + 2 ),UDim2.new(1 + 0 , -28,0 + 0 ,20));local v83=v45(v82,v7("\214\75\186\185\30\190\240\5\191\162\24\184\240\5\191\184\93\172\236\80\164\246\18\162\237\5\177\183\16\176\163\83\191\179\10\245\236\75\186\175\83\245\215\77\179\246\14\176\241\83\179\164\93\166\247\76\186\186\93\177\230\70\191\178\24\166\163\82\190\183\9\245\250\74\163\246\15\176\226\73\186\175\93\186\244\75\248","\213\131\37\214\214\125"),16 -4 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(14,28),UDim2.new(1, -(24 + 4),0 + 0 ,214 -(156 + 26) ));v83.TextWrapped=true;v83.TextYAlignment=Enum.TextYAlignment.Top;v83.TextTruncate=Enum.TextTruncate.None;local v87=v44(v43(v7("\18\46\61\171\195\51\63\49\176\239","\129\70\75\69\223"),{[v7("\114\206\235\253","\143\38\171\147\137\28")]=v7("\229\140\181\252\0\232\148\241\142\181","\180\176\226\217\147\99\131"),[v7("\245\182\33\19","\103\179\217\79")]=Enum.Font.GothamBold,[v7("\126\178\4\193\114\133\185\79","\195\42\215\124\181\33\236")]=13,[v7("\57\92\47\42\6\247\1\86\37\109","\152\109\57\87\94\69")]=v37.white,[v7("\219\214\9\168\185\192\91\189\247\211\41\172\178\221\70\251","\200\153\183\106\195\222\178\52")]=v37.blurple,[v7("\16\236\154\57\76\72\1\234\146\56\121\83\42\230\132","\58\82\131\232\93\41")]=0,[v7("\162\66\196\26\127\42\151\67\223\27\126\48\143\88\194","\95\227\55\176\117\61")]=false,[v7("\43\119\57\78","\203\120\30\67\43")]=UDim2.fromOffset(110,17 + 11 ),[v7("\193\42\94\230\205\248\42\67","\185\145\69\45\143")]=UDim2.fromOffset(21 -7 ,60)},v82),169 -(149 + 15) );local v88=v45(v82,"",12,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(1094 -(890 + 70) ,177 -(39 + 78) ),UDim2.new(1, -148,0,510 -(14 + 468) ));v87.MouseButton1Click:Connect(function() v88.Text=v7("\189\16\11\173\213\132\24\87\232\146","\188\234\127\121\198");task.spawn(function() local v276=0 -0 ;local v277;local v278;local v279;while true do if (v276==(2 -1)) then v279=nil;while true do if ((0 + 0)==v277) then v278,v279=pcall(v36);v88.Text=(v278 and v279) or (v7("\29\32\1\140\42\104\83","\227\88\82\115")   .. tostring(v279)) ;break;end end break;end if (v276==0) then v277=0 + 0 ;v278=nil;v276=1 + 0 ;end end end);end);local v89=v43(v7("\101\13\187\170\7","\19\35\127\218\199\98"),{[v7("\47\242\16\231","\130\124\155\106")]=UDim2.new(1,0 + 0 ,0 + 0 ,99 -47 ),[v7("\229\196\229\166\183\255\115\177","\223\181\171\150\207\195\150\28")]=UDim2.new(0 + 0 ,0 -0 ,1 + 0 , -(103 -(12 + 39))),[v7("\110\59\224\165\14\94\53\246\160\13\111\53\239\161\27\31","\105\44\90\131\206")]=v37.panel,[v7("\221\239\160\189\13\44\204\233\168\188\56\55\231\229\190","\94\159\128\210\217\104")]=0 + 0 },v50);local v90=v44(v43(v7("\121\244\7\184\90\83\248\120\85\245","\26\48\153\102\223\63\31\153"),{[v7("\49\73\247\246","\147\98\32\141")]=UDim2.fromOffset(98 -66 ,32),[v7("\40\76\240\195\18\95\68\22","\43\120\35\131\170\102\54")]=UDim2.fromOffset(35 -25 ,3 + 7 ),[v7("\118\7\132\189\162\162\139\65\8\131\149\170\188\139\70\85","\228\52\102\231\214\197\208")]=v37.darkest,[v7("\60\239\103\206\239\153\42\223\4\229\69\195\242\142\21","\182\126\128\21\170\138\235\121")]=0 + 0 },v89),40 -24 );task.spawn(function() local v229=0;local v230;local v231;local v232;while true do if (v229==(0 + 0)) then v230=0 -0 ;v231=nil;v229=1711 -(1596 + 114) ;end if (v229==(2 -1)) then v232=nil;while true do if (v230==(713 -(164 + 549))) then v231,v232=pcall(v8.GetUserThumbnailAsync,v8,v12.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size100x100);if v231 then v90.Image=v232;end break;end end break;end end end);local v91=v44(v43(v7("\173\200\52\235\131","\102\235\186\85\134\230\115\80"),{[v7("\100\5\36\90","\66\55\108\94\63\18\180")]=UDim2.fromOffset(1452 -(1059 + 379) ,16 -2 ),[v7("\36\130\150\62\51\80\27\131","\57\116\237\229\87\71")]=UDim2.fromOffset(17 + 14 ,31),[v7("\136\176\238\236\112\252\72\191\191\233\196\120\226\72\184\226","\39\202\209\141\135\23\142")]=v37.panel,[v7("\221\60\27\14\55\234\204\58\19\15\2\241\231\54\5","\152\159\83\105\106\82")]=0 + 0 },v89),399 -(145 + 247) );local v92=v44(v43(v7("\167\212\80\255\204","\60\225\166\49\146\169"),{[v7("\28\23\53\47","\103\79\126\79\74\97")]=UDim2.fromOffset(9 + 1 ,5 + 5 ),[v7("\138\112\192\122\74\19\181\113","\122\218\31\179\19\62")]=UDim2.fromOffset(5 -3 ,1 + 1 ),[v7("\145\215\206\202\206\179\74\166\216\201\226\198\173\74\161\133","\37\211\182\173\161\169\193")]=v37.grey,[v7("\213\53\95\221\45\105\138\254\32\72\233\33\99\188\251","\217\151\90\45\185\72\27")]=0 + 0 },v91),7 -2 );v45(v89,v12.DisplayName,733 -(254 + 466) ,v37.white,Enum.Font.GothamBold,UDim2.fromOffset(612 -(544 + 16) ,25 -17 ),UDim2.new(1, -(686 -(294 + 334)),253 -(236 + 17) ,18));local v93=v45(v89,v7("\226\105\243\29\70\207\125\254\82\89\197\122","\54\163\28\135\114"),5 + 6 ,v37.muted,Enum.Font.Gotham,UDim2.fromOffset(52,26),UDim2.new(1, -(46 + 12),0,59 -43 ));local v94,v95,v96;v47.InputBegan:Connect(function(v233) if ((v233.UserInputType==Enum.UserInputType.MouseButton1) or (v233.UserInputType==Enum.UserInputType.Touch)) then v94,v95,v96=true,v46.Position,v233.Position;end end);v20[ #v20 + 1 ]=v9.InputChanged:Connect(function(v234) if (v94 and ((v234.UserInputType==Enum.UserInputType.MouseMovement) or (v234.UserInputType==Enum.UserInputType.Touch))) then local v291=0 -0 ;local v292;while true do if (v291==(0 + 0)) then v292=v234.Position-v96 ;v46.Position=UDim2.new(v95.X.Scale,v95.X.Offset + v292.X ,v95.Y.Scale,v95.Y.Offset + v292.Y );break;end end end end);v20[ #v20 + 1 + 0 ]=v9.InputEnded:Connect(function(v235) if ((v235.UserInputType==Enum.UserInputType.MouseButton1) or (v235.UserInputType==Enum.UserInputType.Touch)) then v94=false;end end);v20[ #v20 + (795 -(413 + 381)) ]=v9.InputBegan:Connect(function(v236) if (v236.KeyCode==Enum.KeyCode.RightShift) then v46.Visible= not v46.Visible;end end);local v100=false;v49.MouseButton1Click:Connect(function() v100= not v100;v46.Size=(v100 and UDim2.fromOffset(24 + 536 ,54 -28 )) or UDim2.fromOffset(1454 -894 ,2330 -(582 + 1388) ) ;end);local function v101() v18.on=false;v15.__AP_noMiss=false;v31();for v280,v281 in ipairs(v20) do v281:Disconnect();end v38:Destroy();v15.__AP=nil;end v15.__AP=v101;v48.MouseButton1Click:Connect(v101);local v103={};local function v104(v241,v242) setthreadidentity(13 -5 );local v243,v244=pcall(v242);if ( not v243 and  not v103[v241]) then v103[v241]=true;warn(v7("\19\250\91\150\75\109\38\210\90\138\90\66\104","\31\72\187\61\226\46")   .. v241   .. v7("\153\70","\68\163\102\35\178\39\30")   .. tostring(v244) );end end local function v105() local v245=0 + 0 ;local v246;local v247;local v248;while true do if (v245==0) then v246=364 -(326 + 38) ;v247=nil;v245=2 -1 ;end if (v245==(1 -0)) then v248=nil;while true do if (v246==(622 -(47 + 573))) then v104(v7("\145\192\63\245","\32\229\165\71\129\196\126\223"),function() v68.Text=string.format("%s  •  %dK\nKeys: %s\nHit %d   •   Skipped %d",(v18.strumline and v7("\240\134\202\134\193\211\204\156\202\133","\181\163\233\164\225\225")) or (v18.scanning and v7("\99\136\63\121\94\130\48\112\30\197\112","\23\48\235\94")) or v7("\82\213\152\78\88\61\213\60\220\215\72\89\55","\178\28\186\184\61\55\83") ,v247,table.concat(v248," "),v18.hit,v18.skipped);end);v104(v7("\192\194\83","\149\164\173\39\92\146\110"),function() v92.BackgroundColor3=(v18.on and v37.green) or v37.grey ;end);v246=2 + 1 ;end if (v246==(0 -0)) then v15.__AP_noMiss=v18.noMiss;v247,v248=0 -0 ,{};v246=1665 -(1269 + 395) ;end if (1==v246) then v104(v7("\181\117\195\196\12\160\141\5","\113\222\16\186\167\99\213\227"),function() v247=v24();end);v104(v7("\37\11\226\229","\150\78\110\155"),function() for v377=492 -(76 + 416) ,v247-(444 -(319 + 124))  do local v378=0 -0 ;local v379;local v380;local v381;while true do if (v378==(1007 -(564 + 443))) then v379=0;v380=nil;v378=1;end if (v378==(2 -1)) then v381=nil;while true do if (v379==(458 -(337 + 121))) then v380,v381=v27(v377);v248[ #v248 + (2 -1) ]=v381 or "?" ;break;end end break;end end end end);v246=6 -4 ;end if (v246==(1914 -(1261 + 650))) then v104(v7("\224\50\18","\123\147\71\112\127\122"),function() v93.Text=(v18.on and v7("\237\216\150\126\86\192\204\155\49\73\194","\38\172\173\226\17")) or v7("\108\4\56\224\93\29\45\246\13\30\42\233","\143\45\113\76") ;end);v104(v7("\171\175\21\40\187\176","\92\216\216\124"),v66);break;end end break;end end end local v106=0 + 0 ;v20[ #v20 + (1 -0) ]=v10.Heartbeat:Connect(function(v249) setthreadidentity(1825 -(772 + 1045) );v18.frameMs=math.clamp(v249 * 500 ,1 + 1 ,25);v104(v7("\72\38\169\80","\157\59\82\204\32"),v35);if ((os.clock() -v106)>(144.25 -(102 + 42))) then local v295=1844 -(1524 + 320) ;while true do if ((1270 -(1049 + 221))==v295) then v106=os.clock();v105();break;end end end end);v56(v7("\57\43\247\245\249\230\210\168\61\44","\209\88\94\131\154\137\138\179"));task.spawn(v34);

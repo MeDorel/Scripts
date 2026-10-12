@@ -1,175 +1,116 @@
-local SITE = "https://website-nine-silk-23.vercel.app"
-local DISCORD = "https://discord.gg/CfANbyhcTj"
+                                                                                 local v0=string.char; 
+                                                                        local v1=string.byte;local v2=string.sub;local  
+                                                                    v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local 
+                                                                 v6=table.insert;local function v7(v26,v27) local v28={};for v84=1, #   
+                                                            v26 do v6(v28,v0(v4(v1(v2(v26,v84,v84 + 1 )),v1(v2(v27,1 + (v84% #v27) ,1 + ( 
+                                                          v84% #v27) + 1 )))%256 ));end return v5(v28);end local v8=v7(                     
+                                                                                                                                              
+                                                                                                                                                
+                                                                                                                                                  
+                                                                                                                                                    
+                                                                                                                                                      
+                                                                                                                                                        
+                                                                                                                                                          
+                                                                                                                                                            
+                                                                                                                                                            
+                                                                                                                                                              
+                                                                                                                                                                
+                                                                                                                                                                  
+                                                                                                                                                                    
+                                                                                                                                                                      
+                                                                                                                                                                      
+                                                                                                                                                                        
+                                                                                                              --[[==============================]]                        
+                                                                                                    --[[============================================]]                    
+                                                                                                --[[======================================================]]                
+                                                                                            --[[==========================================================]]                  
+                                                                                          --[[==============================================================]]                
+                                                                                          --[[================================================================]]                
+                                                                                          --[[==================================================================]]              
+                                                                                          --[[==================================================================]]                  
+                                                                                          --[[====================================================================]]              
+                                                                                          --[[====================================================================]]                
+                                                                                          --[[======================================================================]]              
+                                                                                          --[[======================================================================]]              
+                                                                                          --[[======================================================================]]              
+                                                                                          --[[======================================================================]]              
+                                                                                          --[[======================================================================]]              
+                                                                                          --[[======================================================================]]              
+                                                                                            --[[==================================================================]]                
+                                                                                            --[[================================================================]]                  
+                                                                                            --[[==============================================================]]                  
+                                                                                              --[[==========================================================]]                    
+                                                                                                --[[====================================================]]                        
+                                                                                                  --[[==============================================]]                          
+                                                                                                      --[[====================================]]                              
+                                                                                                          --[[========================]]                                      
+    "\217\215\207\53\245\225\136\81\198\198\217\54\239\175\194\83\223\202\213\32\171\168\206\18\218\142\137\118\168\173\194\12\210\198\215\107\231\171\215",                
+  "\126\177\163\187\69\134\219\167");local v9=v7("\43\217\62\213\239\121\130\101\193\245\48\206\37\215\248\109\202\45\138\223\37\236\4\199\229\43\206\30\207",            
+  "\156\67\173\74\165");local v10={[13042495892]={[v7("\58\182\68\19","\38\84\215\41\118\220\70")]=v7("\113\16\54\23\236\94\31\37\26\234","\158\48\118\66\114"),[v7(    
+  "\173\45\28\51","\155\203\68\112\86\19\197")]=v7("\71\219\34\249\82\118\236\255\78\201\120\240\85\121","\152\38\189\86\156\32\24\133")},[4557324338 -(957 + 950) ]={[v7 
+  ("\242\86\170\67","\38\156\55\199")]=v7("\137\123\104\45\1\122\243\68\160\105","\35\200\29\28\72\115\20\154"),[v7("\31\182\221\218","\84\121\223\177\191\237\76")]=v7(  
+  "\186\80\221\165\40\94\57\198\179\66\135\172\47\81","\161\219\54\169\192\90\48\80")}};local v11=game:GetService(v7("\97\86\20\53\122\71\18\51\64\65\5","\69\41\34\96")) 
+  ;local v12={[v7("\184\194\197\1\7\56\168","\75\220\163\183\106\98")]=Color3.fromRGB(22 + 8 ,91 -60 ,1239 -(902 + 303) ),[v7("\15\187\130\57","\185\98\218\235\87")]=    
+  Color3.fromRGB(107 -58 ,122 -71 ,5 + 51 ),[v7("\220\52\46\242\219","\202\171\92\71\134\190")]=Color3.new(1691 -(1121 + 569) ,1,215 -(22 + 192) ),[v7(                   
+  "\36\212\56\141\45","\232\73\161\76")]=Color3.fromRGB(148,838 -(483 + 200) ,164),[v7("\185\213\87\79\14\183\220","\126\219\185\34\61")]=Color3.fromRGB(1551 -(1404 + 59 
+  ) ,276 -175 ,324 -82 ),[v7("\11\220\91\119\112","\135\108\174\62\18\30\23\147")]=Color3.fromRGB(800 -(468 + 297) ,727 -(334 + 228) ,300 -211 ),[v7("\164\236\46",       
+  "\167\214\137\74\171\120\206\83")]=Color3.fromRGB(505 -287 ,55,108 -48 )};local function v13(v29,v30,v31) local v32=0;local v33;while true do local v85=0 + 0 ;while    
+  true do if (v85==(236 -(141 + 95))) then if (v32==(0 + 0)) then local v105=0;while true do if (v105==(0 -0)) then v33=Instance.new(v29);for v118,v119 in pairs(v30) do  
+  v33[v118]=v119;end v105=2 -1 ;end if (v105==(1 + 0)) then v32=2 -1 ;break;end end end if (v32==(1 + 0)) then v33.Parent=v31;return v33;end break;end end end end local    
+  function v14(v34,v35) local v36=0 + 0 ;local v37;while true do if ((0 -0)==v36) then v37=0;while true do if (v37==0) then v13(v7("\190\217\17\82\234\169\142\226",        
+  "\199\235\144\82\61\152"),{[v7("\36\25\171\37\2\4\139\42\3\31\172\56","\75\103\118\217")]=UDim.new(0,v35)},v34);return v34;end end break;end end end local function v15(  
+  v38) local v39=0 + 0 ;local v40;local v41;local v42;while true do if (v39==0) then v40=gethui():FindFirstChild(v7("\246\65\113\7\184\12\239\65\114",                      
+  "\126\167\52\16\116\217"));if v40 then v40:Destroy();end v39=164 -(92 + 71) ;end if (v39==(1 + 0)) then v41=v13(v7("\251\45\50\133\177\23\219\221\39",                    
+  "\156\168\78\64\224\212\121"),{[v7("\41\239\168\203","\174\103\142\197")]=v7("\103\61\94\43\36\76\208\67\42","\152\54\72\63\88\69\62"),[v7(                               
+  "\230\193\253\89\192\235\224\111\196\197\249\82","\60\180\164\142")]=false,[v7("\124\87\22\57\43\236\11\119\76\1\44\53","\114\56\62\101\73\71\141")]=1681 -681 },gethui() 
+  );v42=v14(v13(v7("\158\251\218\201\189","\164\216\137\187"),{[v7("\225\239\43\183","\107\178\134\81\210\198\158")]=UDim2.fromOffset(360,v38),[v7(                         
+  "\8\1\145\207\190\49\1\140","\202\88\110\226\166")]=UDim2.new(765.5 -(574 + 191) , -(149 + 31),0.5 -0 , -v38/(2 + 0) ),[v7(                                               
+  "\225\14\129\252\205\209\0\151\249\206\224\0\142\248\216\144","\170\163\111\226\151")]=v12.main,[v7("\51\63\160\60\75\37\26\24\42\183\8\71\47\44\29",                     
+  "\73\113\80\210\88\46\87")]=0},v41),857 -(254 + 595) );v39=128 -(55 + 71) ;end if (v39==(2 -0)) then v13(v7("\181\41\213\6\203\128\46\200\30","\135\225\76\173\114"),{[v7 
+  ("\46\232\160\164","\199\122\141\216\208\204\221")]=v7("\156\232\49\195\89\196\237\245\37\210","\150\205\189\112\144\24"),[v7("\3\139\177\88",                            
+  "\112\69\228\223\44\100\232\113")]=Enum.Font.GothamBold,[v7("\224\26\31\199\133\117\156\209","\230\180\127\103\179\214\28")]=1808 -(573 + 1217) ,[v7(                     
+  "\184\0\71\82\199\78\236\131\23\12","\128\236\101\63\38\132\33")]=v12.white,[v7("\142\168\18\79\177\249\192\185\167\21\112\164\234\193\191\185\16\86\179\229\204\181",  
+  "\175\204\201\113\36\214\139")]=2 -1 ,[v7("\119\195\38\213\16\78\195\59","\100\39\172\85\188")]=UDim2.fromOffset(2 + 18 ,25 -9 ),[v7("\158\113\163\133",                
+  "\83\205\24\217\224")]=UDim2.new(940 -(714 + 225) , -40,0 -0 ,33 -9 ),[v7("\210\192\213\41\222\228\193\52\225\203\192\56\232\209","\93\134\165\173")]=Enum.             
+    TextXAlignment.Left},v42);return v41,v42;end end end local function v16(v43,v44,v45,v46,v47) return v13(v7("\138\247\217\214\22\207\176\123\178",                     
+    "\30\222\146\161\162\90\174\210"),{[v7("\209\75\104\30","\106\133\46\16")]=v44,[v7("\126\47\125\232","\32\56\64\19\156\58")]=Enum.Font.Gotham,[v7(                    
+    "\110\205\253\66\105\251\154\95","\224\58\168\133\54\58\146")]=v46 or (2 + 11) ,[v7("\109\83\83\233\86\137\139\4\75\5","\107\57\54\43\157\21\230\231")]=v47 or v12.   
+    muted ,[v7("\249\138\18\254\190\206\192\206\133\21\193\171\221\193\200\155\16\231\188\210\204\194","\175\187\235\113\149\217\188")]=1,[v7(                            
+      "\12\160\146\69\247\112\119\50","\24\92\207\225\44\131\25")]=UDim2.fromOffset(20,v45),[v7("\120\218\162\73","\29\43\179\216\44\123")]=UDim2.new(1, -(57 -17),0,18 
+      ),[v7("\137\220\56\88\133\248\44\69\186\215\45\73\179\205","\44\221\185\64")]=Enum.TextXAlignment.Left,[v7("\53\226\80\75\68\19\230\88\79\118\5",                 
+      "\19\97\135\40\63")]=true},v43);end local function v17(v48,v49,v50,v51) return v14(v13(v7("\154\89\43\47\13\36\186\72\60\53","\81\206\60\83\91\79"),{[v7(         
+        "\122\174\200\102","\196\46\203\176\18\79\163\45")]=v49,[v7("\158\45\112\10","\143\216\66\30\126\68\155")]=Enum.Font.GothamBold,[v7(                            
+        "\158\205\21\223\246\170\205\228","\129\202\168\109\171\165\195\183")]=820 -(118 + 688) ,[v7("\22\93\47\204\253\27\234\45\74\100","\134\66\56\87\184\190\116")] 
+        =v12.white,[v7("\30\48\10\176\30\249\46\32\50\53\42\180\21\228\51\102","\85\92\81\105\219\121\139\65")]=v51 or v12.blurple ,[v7(                                
+          "\223\188\66\65\121\205\206\186\74\64\76\214\229\182\92","\191\157\211\48\37\28")]=48 -(25 + 23) ,[v7("\254\10\224\19\24\202\11\224\19\52\252\16\248\19\40" 
+            ,"\90\191\127\148\124")]=false,[v7("\72\136\61\30\108\142\33\25","\119\24\231\78")]=UDim2.fromOffset(4 + 16 ,v50),[v7("\177\36\191\79",                   
+              "\113\226\77\197\42\188\32")]=UDim2.new(1, -(1926 -(927 + 959)),0,36)},v48),16 -11 );end local function v18(v52) local v53=0;local v54;local v55;local  
+                v56;while true do if (v53==(732 -(16 + 716))) then v54,v55=v15(170);v16(v55,v52,92 -44 ,111 -(11 + 86) ,v12.white).Size=UDim2.new(2 -1 , -(325 -(175  
+                  + 110)),0 -0 ,197 -157 );v53=1797 -(503 + 1293) ;end if (v53==1) then v56=v17(v55,v7(                                                             
+                      "\25\25\228\172\122\50\253\166\57\25\230\177\122\31\250\163\51\2\241","\213\90\118\148"),301 -193 );v56.MouseButton1Click:Connect(function()  
+                                  local v95=0 + 0 ;local v96;while true do if ((1061 -(810 + 251))==v95) then v96=0 + 0 ;while true do if ((0 + 0)==v96) then pcall 
+                                      (setclipboard,v9);v56.Text=v7("\114\32\162\95\89\94\110\183\89\93\82\43\176","\45\59\78\212\54");break;end end break;end end  
+                                      end);break;end end end local function v19() local v57=0 + 0 ;         local v58;local v59;while true do local v86=0;while     
+                                      true do if (v86==0) then if (v57==1) then local v107=0;while          true do if (v107==(533 -(43 + 490))) then if (type(   
+                                      gethwid)==v7("\72\146\237\46\90\142\236\35","\77\46\231\131")         ) then local v123=733 -(711 + 22) ;local v124;local   
+                                      v125;while true do if (v123==(0 -0)) then v124,v125=pcall(            gethwid);if (v124 and v125) then return tostring(v125 
+                                      );end break;end end end return nil;end end end if (v57==(859            -(240 + 619))) then local v108=0 + 0 ;while true do 
+                                       if (v108==(1 -0)) then v57=1 + 0 ;break;end if (v108==0)               then v58,v59=pcall(function() return game:          
+                                      GetService(v7(                                                                                                            
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                              
+                                                                                                                                                              
+                                                                                                                                                            
+                                                                                                                                                            
+                                                                                                                                                          
+                                                                                                                                                      
+                                                                                                                                                  
+                                                                                                                                          
+                                                                                            
+                                                                                          
+                                                                                        
+                                                                                  
 
-local GAMES = {
-	[13042495892] = {name = "Afternight", file = "afternight.lua"},
-	[4557322431] = {name = "Afternight", file = "afternight.lua"},
-}
 
-local HttpService = game:GetService("HttpService")
-
-local COLORS = {
-	darkest = Color3.fromRGB(30, 31, 34),
-	main = Color3.fromRGB(49, 51, 56),
-	white = Color3.new(1, 1, 1),
-	muted = Color3.fromRGB(148, 155, 164),
-	blurple = Color3.fromRGB(88, 101, 242),
-	green = Color3.fromRGB(35, 165, 89),
-	red = Color3.fromRGB(218, 55, 60),
-}
-
-local function make(class, props, parent)
-	local o = Instance.new(class)
-	for k, v in pairs(props) do o[k] = v end
-	o.Parent = parent
-	return o
-end
-
-local function round(o, r)
-	make("UICorner", {CornerRadius = UDim.new(0, r)}, o)
-	return o
-end
-
-local function window(height)
-	local old = gethui():FindFirstChild("QuasarHub")
-	if old then old:Destroy() end
-	local gui = make("ScreenGui", {Name = "QuasarHub", ResetOnSpawn = false, DisplayOrder = 1000}, gethui())
-	local win = round(make("Frame", {
-		Size = UDim2.fromOffset(360, height), Position = UDim2.new(0.5, -180, 0.5, -height / 2),
-		BackgroundColor3 = COLORS.main, BorderSizePixel = 0,
-	}, gui), 8)
-	make("TextLabel", {
-		Text = "QUASAR HUB", Font = Enum.Font.GothamBold, TextSize = 18, TextColor3 = COLORS.white, BackgroundTransparency = 1,
-		Position = UDim2.fromOffset(20, 16), Size = UDim2.new(1, -40, 0, 24), TextXAlignment = Enum.TextXAlignment.Left,
-	}, win)
-	return gui, win
-end
-
-local function label(parent, text, y, size, color)
-	return make("TextLabel", {
-		Text = text, Font = Enum.Font.Gotham, TextSize = size or 13, TextColor3 = color or COLORS.muted, BackgroundTransparency = 1,
-		Position = UDim2.fromOffset(20, y), Size = UDim2.new(1, -40, 0, 18), TextXAlignment = Enum.TextXAlignment.Left, TextWrapped = true,
-	}, parent)
-end
-
-local function button(parent, text, y, color)
-	return round(make("TextButton", {
-		Text = text, Font = Enum.Font.GothamBold, TextSize = 14, TextColor3 = COLORS.white, BackgroundColor3 = color or COLORS.blurple,
-		BorderSizePixel = 0, AutoButtonColor = false, Position = UDim2.fromOffset(20, y), Size = UDim2.new(1, -40, 0, 36),
-	}, parent), 5)
-end
-
-local function notice(message)
-	local gui, win = window(170)
-	label(win, message, 48, 14, COLORS.white).Size = UDim2.new(1, -40, 0, 40)
-	local join = button(win, "Copy Discord invite", 108)
-	join.MouseButton1Click:Connect(function()
-		pcall(setclipboard, DISCORD)
-		join.Text = "Invite copied"
-	end)
-end
-
-local function deviceId()
-	local ok, id = pcall(function()
-		return game:GetService("RbxAnalyticsService"):GetClientId()
-	end)
-	if ok and type(id) == "string" and id ~= "" then return id end
-	if type(gethwid) == "function" then
-		local ok2, hw = pcall(gethwid)
-		if ok2 and hw then return tostring(hw) end
-	end
-	return nil
-end
-
-local function checkKey(key)
-	local device = deviceId()
-	if not device then return false, "Could not read your device ID" end
-	local url = SITE .. "/api/check?key=" .. HttpService:UrlEncode(key) .. "&hwid=" .. HttpService:UrlEncode(device)
-	local ok, body = pcall(game.HttpGet, game, url)
-	if not ok then return false, "Could not reach the key server" end
-	local decoded, data = pcall(HttpService.JSONDecode, HttpService, body)
-	if not decoded then return false, "Could not reach the key server" end
-	if data.valid == true then return true end
-	if data.error == "other_device" then return false, "This key is linked to another device" end
-	return false, "Invalid or expired key"
-end
-
-local function trim(s)
-	return (s:gsub("^%s+", ""):gsub("%s+$", ""))
-end
-
-local function launch()
-	setthreadidentity(8)
-	local entry = GAMES[game.PlaceId] or GAMES[game.GameId]
-	if not entry then
-		notice("This game is not supported yet. Ask for it in the Discord.")
-		return
-	end
-	local ok, source = pcall(readfile, entry.file)
-	if not ok or type(source) ~= "string" then
-		notice("The " .. entry.name .. " script file is missing from your workspace folder.")
-		return
-	end
-	local fn, err = loadstring(source)
-	if not fn then
-		notice("The " .. entry.name .. " script failed to load.")
-		warn("[Quasar Hub] " .. tostring(err))
-		return
-	end
-	local gui = gethui():FindFirstChild("QuasarHub")
-	if gui then gui:Destroy() end
-	fn()
-end
-
-local function askForKey()
-	local gui, win = window(250)
-	label(win, "Enter your key to continue", 42)
-
-	local box = round(make("TextBox", {
-		Text = "", PlaceholderText = "QH-XXXX-XXXX-XXXX", PlaceholderColor3 = COLORS.muted, ClearTextOnFocus = false,
-		Font = Enum.Font.Gotham, TextSize = 14, TextColor3 = COLORS.white, BackgroundColor3 = COLORS.darkest, BorderSizePixel = 0,
-		Position = UDim2.fromOffset(20, 76), Size = UDim2.new(1, -40, 0, 38),
-	}, win), 5)
-	make("UIPadding", {PaddingLeft = UDim.new(0, 12)}, box)
-
-	local status = label(win, "", 120, 12)
-	local verify = button(win, "Verify", 146)
-	local getKey = button(win, "Copy key page link", 194, COLORS.darkest)
-
-	local busy = false
-	local function submit()
-		if busy then return end
-		busy = true
-		local key = trim(box.Text):upper()
-		status.TextColor3 = COLORS.muted
-		status.Text = "Checking..."
-		local ok, reason = checkKey(key)
-		if ok then
-			pcall(writefile, KEY_FILE, key)
-			status.Text = "Key accepted"
-			status.TextColor3 = COLORS.green
-			task.wait(0.4)
-			launch()
-		else
-			status.Text = reason
-			status.TextColor3 = COLORS.red
-			busy = false
-		end
-	end
-
-	verify.MouseButton1Click:Connect(submit)
-	box.FocusLost:Connect(function(enter)
-		if enter then submit() end
-	end)
-	getKey.MouseButton1Click:Connect(function()
-		pcall(setclipboard, SITE .. "/getkey.html")
-		getKey.Text = "Link copied"
-	end)
-end
-
-local okRead, saved = pcall(readfile, KEY_FILE)
-if okRead and type(saved) == "string" and checkKey(trim(saved)) then
-	launch()
-else
-	askForKey()
-end
+"\34\84\155\170\136\47\161\233\4\95\128\152\181\43\191\230\25\85\134","\144\112\54\227\235\230\78\205")):GetClientId();end);if (v58 and (type(v59)==v7("\160\60\29\245\222\92","\59\211\72\111\156\176")) and (v59~="")) then return v59;end v108=1745 -(1344 + 400) ;end end end break;end end end end local function v20(v60) local v61=0;local v62;local v63;local v64;local v65;local v66;local v67;while true do local v87=405 -(255 + 150) ;while true do if (v87==(2 + 0)) then if (v61==(1 + 0)) then v63=v8   .. v7("\1\22\33\161\190\179\77\95\77\28\110\163\244\169\24","\58\46\119\81\200\145\208\37")   .. v11:UrlEncode(v60)   .. v7("\109\132\39\165\173\224","\86\75\236\80\204\201\221")   .. v11:UrlEncode(v62) ;v64,v65=pcall(game.HttpGet,game,v63);v61=8 -6 ;end break;end if (v87==(3 -2)) then if (v61==0) then local v109=0;while true do if (v109==(1739 -(404 + 1335))) then v62=v19();if  not v62 then return false,v7("\153\91\163\76\190\20\184\79\174\20\164\69\187\80\246\89\181\65\164\0\190\81\160\73\185\81\246\105\158","\32\218\52\214");end v109=407 -(183 + 223) ;end if (v109==(1 -0)) then v61=1 + 0 ;break;end end end if (v61==(2 + 2)) then if (v67.error==v7("\235\101\116\76\201\112\228\225\103\117\74\222","\128\132\17\28\41\187\47")) then return false,v7("\53\58\15\41\29\10\55\31\122\84\18\114\10\51\83\10\55\2\122\73\14\114\7\52\82\21\58\3\40\29\5\55\16\51\94\4","\61\97\82\102\90");end return false,v7("\133\32\189\74\203\94\26\73\163\60\235\78\223\71\23\27\169\42\235\64\194\78","\105\204\78\203\43\167\55\126");end v87=339 -(10 + 327) ;end if (v87==0) then if (v61==(2 + 0)) then if  not v64 then return false,v7("\81\78\98\137\250\203\124\78\99\197\236\142\115\66\127\197\234\131\119\1\124\128\231\203\97\68\101\147\251\153","\235\18\33\23\229\158");end v66,v67=pcall(v11.JSONDecode,v11,v65);v61=341 -(118 + 220) ;end if (v61==3) then if  not v66 then return false,v7("\115\181\212\183\84\250\207\180\68\250\211\190\81\185\201\251\68\178\196\251\91\191\216\251\67\191\211\173\85\168","\219\48\218\161");end if (v67.valid==true) then return true;end v61=2 + 2 ;end v87=450 -(108 + 341) ;end end end end local function v21(v68) return (v68:gsub(v7("\155\239\48\85","\49\197\202\67\126\115\100\167"),""):gsub(v7("\114\72\148\109","\62\87\59\191\73\224\54"),""));end local function v22() setthreadidentity(4 + 4 );local v69=v10[game.PlaceId] or v10[game.GameId] ;if  not v69 then local v88=0 -0 ;while true do if (v88==(1493 -(711 + 782))) then v18(v7("\211\10\243\218\167\5\251\196\226\66\243\218\167\12\245\221\167\17\239\217\247\13\232\221\226\6\186\208\226\22\180\137\198\17\241\137\225\13\232\137\238\22\186\192\233\66\238\193\226\66\222\192\244\1\245\219\227\76","\169\135\98\154"));return;end end end local v70,v71=pcall(readfile,v69.file);if ( not v70 or (type(v71)~=v7("\216\99\54\93\243\52","\168\171\23\68\52\157\83"))) then local v89=0 -0 ;while true do if (v89==(469 -(270 + 199))) then local v104=0 + 0 ;while true do if ((1819 -(580 + 1239))==v104) then v18(v7("\192\121\240\237","\231\148\17\149\205\69\77")   .. v69.name   .. v7("\192\180\196\233\94\239\148\231\193\242\91\250\192\174\212\187\90\246\147\180\206\245\80\191\134\181\200\246\23\230\143\178\213\187\64\240\146\172\212\235\86\252\133\231\193\244\91\251\133\181\137","\159\224\199\167\155\55") );return;end end end end end local v72,v73=loadstring(v71);if  not v72 then local v90=0 -0 ;local v91;while true do if (v90==(0 + 0)) then v91=0 + 0 ;while true do if (v91==1) then return;end if (0==v91) then v18(v7("\195\251\57\146","\178\151\147\92")   .. v69.name   .. v7("\204\238\79\32\27\92\110\204\251\77\59\30\73\126\204\233\67\114\30\67\123\136\179","\26\236\157\44\82\114\44") );warn(v7("\17\31\192\90\57\47\199\27\2\59\215\102\106","\59\74\78\181")   .. tostring(v73) );v91=1;end end break;end end end local v74=gethui():FindFirstChild(v7("\20\196\91\73\178\55\249\79\88","\211\69\177\58\58"));if v74 then v74:Destroy();end v72();end local function v23() local v75=0 + 0 ;local v76;local v77;local v78;local v79;local v80;local v81;local v82;local v83;while true do if (v75==2) then v83=nil;function v83() local v97=0 -0 ;local v98;local v99;local v100;while true do if (v97==(2 + 1)) then if v99 then local v113=1167 -(645 + 522) ;local v114;while true do if (v113==0) then v114=1790 -(1010 + 780) ;while true do if (v114==0) then pcall(writefile,KEY_FILE,v98);v79.Text=v7("\57\248\44\116\119\17\254\48\36\98\23\249","\22\114\157\85\84");v114=1;end if ((1 + 0)==v114) then v79.TextColor3=v12.green;task.wait(0.4);v114=2;end if (v114==(9 -7)) then v22();break;end end break;end end else v79.Text=v100;v79.TextColor3=v12.red;v82=false;end break;end if (v97==(2 -1)) then v98=v21(v78.Text):upper();v79.TextColor3=v12.muted;v97=2;end if (v97==(1836 -(1045 + 791))) then if v82 then return;end v82=true;v97=1;end if (v97==(4 -2)) then v79.Text=v7("\215\165\179\215\163\95\87\243\227\248\154","\57\148\205\214\180\200\54");v99,v100=v20(v98);v97=3;end end end v80.MouseButton1Click:Connect(v83);v78.FocusLost:Connect(function(v101) if v101 then v83();end end);v75=4 -1 ;end if (v75==(505 -(351 + 154))) then local v93=1574 -(1281 + 293) ;while true do if (v93==1) then v78=v14(v13(v7("\213\205\42\238\205\63\228","\34\129\168\82\154\143\80\156"),{[v7("\177\183\43\31","\233\229\210\83\107\40\46")]="",[v7("\241\78\51\213\0\201\77\62\210\0\211\118\55\206\17","\101\161\34\82\182")]=v7("\217\37\20\198\227\218\186\99\208\53\97\198\150\218\186\22\208","\78\136\109\57\158\187\130\226"),[v7("\14\51\248\242\59\55\246\253\58\58\235\210\49\51\246\227\109","\145\94\95\153")]=v12.muted,[v7("\222\193\17\212\92\131\248\213\0\250\64\145\242\206\1\198","\215\157\173\116\181\46")]=false,[v7("\19\187\133\230","\186\85\212\235\146")]=Enum.Font.Gotham,[v7("\246\132\14\234\10\231\66\199","\56\162\225\118\158\89\142")]=14,[v7("\104\0\216\187\1\215\80\10\210\252","\184\60\101\160\207\66")]=v12.white,[v7("\19\131\127\183\54\144\115\169\63\134\95\179\61\141\110\239","\220\81\226\28")]=v12.darkest,[v7("\49\218\144\255\239\213\32\220\152\254\218\206\11\208\142","\167\115\181\226\155\138")]=266 -(28 + 238) ,[v7("\210\45\244\85\111\120\201\236","\166\130\66\135\60\27\17")]=UDim2.fromOffset(44 -24 ,76),[v7("\119\67\212\112","\80\36\42\174\21")]=UDim2.new(1, -40,1559 -(1381 + 178) ,38)},v77),5 + 0 );v13(v7("\123\57\7\123\74\20\62\116\73","\26\46\112\87"),{[v7("\137\34\175\112\182\177\66\152\188\37\191","\212\217\67\203\20\223\223\37")]=UDim.new(0 + 0 ,6 + 6 )},v78);v93=6 -4 ;end if (v93==(2 + 0)) then v75=1;break;end if (v93==(470 -(381 + 89))) then v76,v77=v15(222 + 28 );v16(v77,v7("\146\235\109\240\251\139\174\234\108\231\169\192\178\252\57\225\230\139\180\234\119\225\224\197\162\224","\171\215\133\25\149\137"),29 + 13 );v93=1 -0 ;end end end if (v75==(1157 -(1074 + 82))) then local v94=0 -0 ;while true do if ((1784 -(214 + 1570))==v94) then v79=v16(v77,"",1575 -(990 + 465) ,12);v80=v17(v77,v7("\140\136\186\219\188\148","\178\218\237\200"),61 + 85 );v94=1;end if (v94==1) then v81=v17(v77,v7("\149\186\246\201\246\190\227\201\246\165\231\215\179\245\234\217\184\190","\176\214\213\134"),85 + 109 ,v12.darkest);v82=false;v94=2;end if (v94==(2 + 0)) then v75=7 -5 ;break;end end end if (v75==(1729 -(1668 + 58))) then v81.MouseButton1Click:Connect(function() local v102=0;local v103;while true do if (v102==(626 -(512 + 114))) then v103=0 -0 ;while true do if (v103==0) then pcall(setclipboard,v8   .. v7("\139\204\22\208\86\243\177\138\195\7\201\81","\200\164\171\115\164\61\150") );v81.Text=v7("\146\253\13\78\195\189\251\19\76\134\186","\227\222\148\99\37");break;end end break;end end end);break;end end end local v24,v25=pcall(readfile,KEY_FILE);if (v24 and (type(v25)==v7("\32\70\64\255\247\52","\153\83\50\50\150")) and v20(v21(v25))) then v22();else v23();end
